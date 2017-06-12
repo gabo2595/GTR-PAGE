@@ -2,7 +2,7 @@
   "name": "GABRIEL-TORRES-PAGE",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://gabo2595.github.io/GABRIEL-TORRES-PAGE",
+  "homepage": "https://gabo2595.github.io/GABRIEL-TORRES-PAGE",
   "dependencies": {
     "aos": "^2.1.1",
     "react": "^15.5.4",
