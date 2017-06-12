@@ -1,5 +1,5 @@
 import React from 'react';
-import {IndexRoute, Router, Route, browserHistory} from 'react-router'; 
+import {IndexRoute, Router, Route, hashHistory} from 'react-router'; 
 import {Home} from 'containers/Home/Home';
 import {App} from 'containers/App/App';
 
@@ -19,7 +19,7 @@ Router.prototype.componentWillReceiveProps = function(nextProps) {
 };
 
 export default (
-	<Router history={browserHistory}>
+	<Router history={hashHistory}>
 		<Route path="/" component={App}>
 			<IndexRoute component={Home}/>
 		</Route>
