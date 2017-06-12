@@ -139,7 +139,7 @@ export class Portfolio extends Component {
 						{/*<span onClick={this.setId1Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left hidden-xs"></span>*/}
 					</div>
 					<div id="divPic" className="col-xs-12 col-sm-12 col-md-7">
-						<Img id="img" alt="self" style={{width: '100%', height: '390px'}}
+						<Img id="img" alt="self" style={{width: '100%', height: 'auto'}}
 							src={require('assets/GTR-Webpage-l.png')}
 						/>
 						<span style={{paddingTop: 0}} onClick={this.setId1Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
@@ -250,8 +250,8 @@ export class Portfolio extends Component {
 						{/*<span onClick={this.setId3Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left hidden-xs"></span>*/}
 					</div>
 					<div id="divPic" className="col-xs-12 col-sm-12 col-md-7">
-						<Img id="img" alt="self" style={{width: '100%', height: '410px'}}
-							src={require('assets/usb.jpg')}
+						<Img id="img" alt="self" style={{width: '100%', height: 'auto'}}
+							src={require('assets/usb-m.jpg')}
 						/>
 						<span onClick={this.setId3Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 					</div>
@@ -286,8 +286,8 @@ export class Portfolio extends Component {
 						{/*<span onClick={this.setId4Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left hidden-xs"></span>*/}
 					</div>
 					<div id="divPic" className="col-xs-12 col-sm-12 col-md-7">
-						<Img id="img" alt="self" style={{width: '100%', height: '400px'}}
-							src={require('assets/twitter1.jpg')}
+						<Img id="img" alt="self" style={{width: '100%', height: 'auto'}}
+							src={require('assets/twitter1-m.jpg')}
 						/>
 						<span onClick={this.setId4Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 					</div>
