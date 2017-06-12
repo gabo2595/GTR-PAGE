@@ -1,8 +1,8 @@
 {
-  "name": "gabriel-torres",
+  "name": "GTR-PAGE",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gabo2595.github.io/gabriel-torres/",
+  "homepage": "https://gabo2595.github.io/GTR-PAGE",
   "dependencies": {
     "aos": "^2.1.1",
     "react": "^15.5.4",
@@ -61,8 +61,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy" : "npm run build&&gh-pages -d build"
   },
   "jest": {
     "collectCoverageFrom": [
