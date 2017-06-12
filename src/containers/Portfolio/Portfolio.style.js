@@ -184,6 +184,40 @@ export const DivLinks = styled.div`
 	}
 `;
 
+export const DivLinks1 = styled.div`
+
+	@media screen and (min-width: 992px){
+		&{
+			ul > li{
+				width: 200px;
+			}
+			margin-top: -50px;
+		}
+	}
+
+	@media screen and (max-width: 991px){
+		&{
+			padding-left: 50px;
+			margin-top: 0px;
+
+			ul > li{
+				//width: 50px;
+			}
+		}
+	}
+
+	@media screen and (max-width: 767px){
+		&{
+			padding-left: 20px;
+			margin-top: 0px;
+
+			ul > li{
+				//width: 50px;
+			}
+		}
+	}
+`;
+
 export const DivP1 = styled.div`
 	background-image: url(${require('assets/GTR-Webpage-s.png')});
 	background-position: center;

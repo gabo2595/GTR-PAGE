@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {DivP1, DivP2, DivP3, DivP4, DivP5, DivImg, DivTitle, DivContainer, DivLinks, Img} from './Portfolio.style';
+import {DivP1, DivP2, DivP3, DivP4, DivP5, DivImg, DivTitle, DivContainer, DivLinks, Img, DivLinks1} from './Portfolio.style';
 var Scroll = require('react-scroll');
 var Link = Scroll.Link;
 
@@ -119,14 +119,14 @@ export class Portfolio extends Component {
 							a mi correo personal.
 						</p>
 						<div className="row">
-							<div className="col-xs-12 col-sm-6 col-md-6">
+							<div className="col-xs-12 col-sm-4 col-md-6">
 								<h3>Rol:</h3>
 								<ul>
 									<li>Desarrollador Front-End</li>
 									<li>Diseño web</li>
 								</ul>
 							</div>
-							<div className="col-xs-12 col-sm-6 col-md-6">
+							<div className="col-xs-12 col-sm-4 col-md-6">
 								<h3>Tecnología:</h3>
 								<ul>
 									<li>HTML5</li>
@@ -135,6 +135,12 @@ export class Portfolio extends Component {
 									<li>ReactJS (framework)</li>
 								</ul>
 							</div>
+							<DivLinks1 className="col-xs-12 col-sm-4 col-md-6">
+								<h3>Links:</h3>
+								<ul>
+									<li><a target="_blank" href="https://github.com/gabo2595/GTR-Page">Repositorio GitHub</a></li>
+								</ul>
+							</DivLinks1>
 						</div>
 						{/*<span onClick={this.setId1Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left hidden-xs"></span>*/}
 					</div>
