@@ -73,8 +73,9 @@ export const Div1 = styled.div`
 `;
 
 export const Span1 = styled.span`
-  font-size: 2.5em;
+  font-size: 1.8em;
   margin-left: 11%;
+  margin-right: 1%;
 
   h4{
   	padding-bottom: 3%;
@@ -91,8 +92,9 @@ export const Span1 = styled.span`
 `;
 
 export const Span2 = styled.span`
-  fontSize: 2em;
-  margin-left: 10%;
+  fontSize: 1.8em;
+  margin-left: 11%;
+  margin-right: 1%;
 
   h4{
   	margin-bottom: 0;

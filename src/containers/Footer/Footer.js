@@ -23,25 +23,25 @@ export class Footer extends Component {
 							<Social className="social">
 								{/*social icons are here*/}
 								<A target="_blank" href="https://www.linkedin.com/in/gabriel-torres-268519126" className="rss">
-									<SpanIcon id="icon" className="brandico-linkedin-rect"></SpanIcon>
+									<SpanIcon id="icon" className="fa fa-linkedin"></SpanIcon>
 									<SpanInfo className="info">
 										<SpanFollow className="follow">LinkedIn</SpanFollow>
 									</SpanInfo>
 								</A>
 								<A target="_blank" href="https://www.instagram.com/gabotruiz/" className="rss">
-									<SpanIcon id="icon" className="brandico-instagram-filled"></SpanIcon>
+									<SpanIcon id="icon" className="fa fa-instagram"></SpanIcon>
 									<SpanInfo className="info">
 										<SpanFollow className="follow">Instagram</SpanFollow>
 									</SpanInfo>
 								</A>
 								<A target="_blank" href="https://www.facebook.com/gabriel.torres.52459" className="fb">
-									<SpanIcon id="icon" className="brandico-facebook-rect"></SpanIcon>
+									<SpanIcon id="icon" className="fa fa-facebook-f"></SpanIcon>
 									<SpanInfo className="info">
 										<SpanFollow className="follow">Facebook</SpanFollow>
 									</SpanInfo>
 								</A>
 								<A target="_blank" href="#" className="tw">
-									<SpanIcon id="icon" className="zocial-twitter"></SpanIcon>
+									<SpanIcon id="icon" className="fa fa-twitter"></SpanIcon>
 									<SpanInfo className="info">
 										<SpanFollow className="follow">Twitter</SpanFollow>
 									</SpanInfo>

@@ -45,7 +45,7 @@ export class Home extends Component {
 				<Slide/>
 				<DivArrow className="arrow animated bounce">
 					<Link style={{textDecoration: 'none'}} activeClass="active" to="test1" spy={true} smooth={true} offset={-20} duration={1000} delay={200}>
-						<SpanR style={{fontSize: '50px', color: 'white'}} className="typicons-next"></SpanR>
+						<SpanR style={{fontSize: '35px', color: 'white'}} className="glyphicon glyphicon-chevron-down"></SpanR>
 					</Link>
 				</DivArrow>
 				<br/>

@@ -4,12 +4,12 @@ import {injectGlobal} from 'styled-components';
 injectGlobal`
 
 	@import url(https://fonts.googleapis.com/css?family=Lato);
-	@import url(http://weloveiconfonts.com/api/?family=zocial);
+	/*@import url(http://weloveiconfonts.com/api/?family=zocial);
 	@import url(http://weloveiconfonts.com/api/?family=brandico);
 	@import url(http://weloveiconfonts.com/api/?family=typicons);
-	@import url(http://weloveiconfonts.com/api/?family=fontawesome);
+	@import url(http://weloveiconfonts.com/api/?family=fontawesome);*/
 
-	[class*="fontawesome-"]:before {
+	/*[class*="fontawesome-"]:before {
 	  font-family: 'FontAwesome', sans-serif;
 	}
 
@@ -24,7 +24,7 @@ injectGlobal`
 	/* typicons */
 	[class*="typicons-"]:before {
 	  font-family: 'Typicons', sans-serif;
-	}
+	}*/
 
 
 	html, body{

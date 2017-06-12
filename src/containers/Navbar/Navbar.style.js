@@ -196,7 +196,7 @@ export const DivButton = styled.button`
 	padding-top: 0px!important;
 	padding-right: 0px!important;
 	background: transparent !important;
-	transition: all ease-in-out .5s;
+	//transition: all ease-in-out .5s;
 
 	&:hover {
 	  background: transparent !important;

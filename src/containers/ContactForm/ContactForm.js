@@ -46,14 +46,12 @@ export class ContactForm extends Component {
 								tu página web, no dudes en contactarme completando el
 								siguiente formulario.
 							</p>
-							<Span1 id="span1" className="fontawesome-map-marker">
-								<h4>Caracas, Venezuela</h4>
-							</Span1>
+							<Span1 id="span1" className="glyphicon glyphicon-map-marker"></Span1>
+							<h4 style={{display: 'inline-block'}}>Caracas, Venezuela</h4>
 							<br/>
 							<br/>
-							<Span2 id="span2" className="fontawesome-envelope-alt">
-								<h4>gabo2595@gmail.com</h4>
-							</Span2>
+							<Span2 id="span2" className="glyphicon glyphicon-envelope"></Span2>
+							<h4 style={{display: 'inline-block'}}>gabo2595@gmail.com</h4>
 						</div>
 					</Div1>
 					<Div1 className="col-sm-12 col-md-5 visible-xs">
