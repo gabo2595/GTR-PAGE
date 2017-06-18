@@ -4,32 +4,6 @@ export const DivContainer = styled.div`
 	height: auto;
 `;
 
-export const DivTitle = styled.div`
-	padding-top: 30px;
-	padding-bottom: 0px;
-	h1{
-		margin-top: 0px;
-		letter-spacing: 3px;
-		text-transform: uppercase;
-		color: #0961A5;
-		font-weight: 800;
-		font-size: 2.5em;
-		padding-right: 50px;
-		text-align: right;
-	}
-
-	@media screen and (max-width: 991px) {
-    	&{
-    		h1{
-    			font-size: 2em;
-    			padding-bottom: 20px;
-    			padding-right: 0px;
-    			text-align: center;
-    		}
-    	}
-    }
-`;
-
 export const DivImg = styled.div`
 	display: none!important;
 	padding-top: 0px;
@@ -44,6 +18,8 @@ export const DivImg = styled.div`
 	}
 
 	h2{
+		margin-top: 110px;
+		margin-bottom: 10px;
 		font-weight: 800;
 		color: #0961A5;
 		padding-right: 10px;
@@ -74,16 +50,26 @@ export const DivImg = styled.div`
 	}
 
 	span{
+		padding-top: 0px;
+		position: absolute;
+		margin-top: 50px;
+		margin-left: -10px;
+		padding-bottom: 0px;
 		font-size: 3em;
 		cursor: pointer;
 		color: #111;
 		width: 60px;
 		text-align: center;
+
+		-moz-transition: all ease-in-out .2s;
+		-webkit-transition: all ease-in-out .2s;
+		-o-transition: all ease-in-out .2s;
 		transition: all ease-in-out .2s;
-		padding-top: 0px;
-		margin-top: 10px;
 
 		&:hover{
+			-moz-transition: all ease-in-out .2s;
+			-webkit-transition: all ease-in-out .2s;
+			-o-transition: all ease-in-out .2s;
 			transition: all ease-in-out .2s;
 			color: #0961A5;
 		}
@@ -108,7 +94,7 @@ export const DivImg = styled.div`
 			padding-top: 0px;
 
 			h2{
-				margin-top: 0px;
+				//margin-top: 0px;
 				font-size: 1.7em;
 				text-align: center;
 				padding-right: 0px;
@@ -139,7 +125,7 @@ export const DivImg = styled.div`
 `;
 
 export const Img = styled.img`
-	margin-top: 20px;
+	margin-top: 50px;
 	margin-bottom: 20px;
 	box-shadow: 10px 10px 10px 1px black;
 
@@ -157,7 +143,7 @@ export const DivLinks = styled.div`
 			ul > li{
 				width: 200px;
 			}
-			margin-top: -105px;
+			margin-top: -135px;
 		}
 	}
 
@@ -191,7 +177,7 @@ export const DivLinks1 = styled.div`
 			ul > li{
 				width: 200px;
 			}
-			margin-top: -50px;
+			margin-top: -80px;
 		}
 	}
 
@@ -219,26 +205,32 @@ export const DivLinks1 = styled.div`
 `;
 
 export const DivP1 = styled.div`
-	background-image: url(${require('assets/GTR-Webpage-s.png')});
+	background-image: url(${require('assets/WP-2.jpg')});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 250px;
+	height: 300px;
+
+	-moz-transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
 	transition: all .5s ease-out;
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
     padding-left: 0px!important;
     padding-right: 0px!important;
+    text-align: center;
 
     p{
+    	-moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
     	transition: opacity ease-in-out .3s;
     	opacity: 0;
     	color: #0961A5;
     	font-size: 2em;
     	font-weight: 700;
+    	padding-top: 110px;
+
     }
 
     #hoverbar{
@@ -250,6 +242,9 @@ export const DivP1 = styled.div`
 	    margin:0;
 	    padding:0;
 	    opacity: 0;
+	    -moz-transition: opacity ease-in-out .3s;
+	    -webkit-transition: opacity ease-in-out .3s;
+	    -o-transition: opacity ease-in-out .3s;
 	    transition: opacity ease-in-out .3s;
 	    z-index: -1;
     }
@@ -259,27 +254,42 @@ export const DivP1 = styled.div`
 		.glyphicon-search{
 			opacity: 1;
 			cursor: pointer;
+			-moz-transition: all ease-in-out .3s;
+			-webkit-transition: all ease-in-out .3s;
+			-o-transition: all ease-in-out .3s;
 			transition: all ease-in-out .3s;
 		}
 
 		p{
+			-moz-transition: opacity ease-in-out .3s;
+			-webkit-transition: opacity ease-in-out .3s;
+			-o-transition: opacity ease-in-out .3s;
 			transition: opacity ease-in-out .3s;
 			opacity: 1;
 		}
 	}
 
 	.glyphicon-search:hover{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
 		color: #EEEEEE;
 	}
 
 	&:hover > #hoverbar{
 		opacity: .9;
+		-moz-transition: opacity ease-in-out .3s;
+		-webkit-transition: opacity ease-in-out .3s;
+		-o-transition: opacity ease-in-out .3s;
 		transition: opacity ease-in-out .3s;
 
 	}
 
 	.glyphicon-search{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
 		color: #0961A5;
 		font-size: 1.6em;
@@ -288,26 +298,30 @@ export const DivP1 = styled.div`
 `;
 
 export const DivP2 = styled.div`
-	background-image: url(${require('assets/SIGPIE.png')});
+	background-image: url(${require('assets/SIGPIE.jpeg')});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 250px;
+	height: 300px;
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+	-o-transition: all ease-in-out .5s;
 	transition: all ease-in-out .5s;
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
     padding-left: 0px!important;
     padding-right: 0px!important;
+    text-align: center;
 
     p{
+    	-moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
     	transition: opacity ease-in-out .3s;
     	opacity: 0;
     	color: #0961A5;
     	font-size: 2em;
     	font-weight: 700;
+    	padding-top: 110px;
     }
 
     #hoverbar{
@@ -319,6 +333,9 @@ export const DivP2 = styled.div`
 	    margin:0;
 	    padding:0;
 	    opacity: 0;
+	    -moz-transition: opacity ease-in-out .3s;
+	    -webkit-transition: opacity ease-in-out .3s;
+	    -o-transition: opacity ease-in-out .3s;
 	    transition: opacity ease-in-out .3s;
 	    z-index: -1;
     }
@@ -328,27 +345,42 @@ export const DivP2 = styled.div`
 		.glyphicon-search{
 			opacity: 1;
 			cursor: pointer;
+			-moz-transition: all ease-in-out .3s;
+			-webkit-transition: all ease-in-out .3s;
+			-o-transition: all ease-in-out .3s;
 			transition: all ease-in-out .3s;
 		}
 
 		p{
+			-moz-transition: opacity ease-in-out .3s;
+			-webkit-transition: opacity ease-in-out .3s;
+			-o-transition: opacity ease-in-out .3s;
 			transition: opacity ease-in-out .3s;
 			opacity: 1;
 		}
 	}
 
 	.glyphicon-search:hover{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
 		color: #EEEEEE;
 	}
 
 	&:hover > #hoverbar{
 		opacity: .9;
+		-moz-transition: opacity ease-in-out .3s;
+		-webkit-transition: opacity ease-in-out .3s;
+		-o-transition: opacity ease-in-out .3s;
 		transition: opacity ease-in-out .3s;
 
 	}
 
 	.glyphicon-search{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
 		color: #0961A5;
 		font-size: 1.6em;
@@ -358,26 +390,30 @@ export const DivP2 = styled.div`
 `;
 
 export const DivP3 = styled.div`
-	background-image: url(${require('assets/usb.jpg')});
+	background-image: url(${require('assets/usb-xs.jpg')});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 250px;
+	height: 300px;
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+	-o-transition: all ease-in-out .5s;
 	transition: all ease-in-out .5s;
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
     padding-left: 0px!important;
     padding-right: 0px!important;
+    text-align: center;
 
     p{
+    	-moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
     	transition: opacity ease-in-out .3s;
     	opacity: 0;
     	color: #0961A5;
     	font-size: 2em;
     	font-weight: 700;
+    	padding-top: 110px;
     }
 
     #hoverbar{
@@ -389,7 +425,10 @@ export const DivP3 = styled.div`
 	    margin:0;
 	    padding:0;
 	    opacity: 0;
-	    transition: opacity ease-in-out .3s;
+	    -moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
+    	transition: opacity ease-in-out .3s;
 	    z-index: -1;
     }
 
@@ -398,27 +437,42 @@ export const DivP3 = styled.div`
 		.glyphicon-search{
 			opacity: 1;
 			cursor: pointer;
+			-moz-transition: all ease-in-out .3s;
+			-webkit-transition: all ease-in-out .3s;
+			-o-transition: all ease-in-out .3s;
 			transition: all ease-in-out .3s;
 		}
 
 		p{
-			transition: opacity ease-in-out .3s;
+			-moz-transition: opacity ease-in-out .3s;
+	    	-webkit-transition: opacity ease-in-out .3s;
+	    	-o-transition: opacity ease-in-out .3s;
+	    	transition: opacity ease-in-out .3s;
 			opacity: 1;
 		}
 	}
 
 	.glyphicon-search:hover{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
 		color: #EEEEEE;
 	}
 
 	&:hover > #hoverbar{
 		opacity: .9;
-		transition: opacity ease-in-out .3s;
+		-moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
+    	transition: opacity ease-in-out .3s;
 
 	}
 
 	.glyphicon-search{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
 		color: #0961A5;
 		font-size: 1.6em;
@@ -427,19 +481,19 @@ export const DivP3 = styled.div`
 `;
 
 export const DivP4 = styled.div`
-	background-image: url(${require('assets/twitter1.jpg')});
+	background-image: url(${require('assets/twitter1-s.jpg')});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 250px;
+	height: 300px;
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+	-o-transition: all ease-in-out .5s;
 	transition: all ease-in-out .5s;
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
     padding-left: 0px!important;
     padding-right: 0px!important;
+    text-align: center;
 
     p{
     	transition: opacity ease-in-out .3s;
@@ -447,6 +501,7 @@ export const DivP4 = styled.div`
     	color: #0961A5;
     	font-size: 2em;
     	font-weight: 700;
+    	padding-top: 110px;
     }
 
     #hoverbar{
@@ -458,7 +513,10 @@ export const DivP4 = styled.div`
 	    margin:0;
 	    padding:0;
 	    opacity: 0;
-	    transition: opacity ease-in-out .3s;
+	    -moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
+    	transition: opacity ease-in-out .3s;
 	    z-index: -1;
     }
 
@@ -467,27 +525,42 @@ export const DivP4 = styled.div`
 		.glyphicon-search{
 			opacity: 1;
 			cursor: pointer;
+			-moz-transition: all ease-in-out .3s;
+			-webkit-transition: all ease-in-out .3s;
+			-o-transition: all ease-in-out .3s;
 			transition: all ease-in-out .3s;
 		}
 
 		p{
-			transition: opacity ease-in-out .3s;
+			-moz-transition: opacity ease-in-out .3s;
+	    	-webkit-transition: opacity ease-in-out .3s;
+	    	-o-transition: opacity ease-in-out .3s;
+	    	transition: opacity ease-in-out .3s;
 			opacity: 1;
 		}
 	}
 
 	.glyphicon-search:hover{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
 		color: #EEEEEE;
 	}
 
 	&:hover > #hoverbar{
 		opacity: .9;
-		transition: opacity ease-in-out .3s;
+		-moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
+    	transition: opacity ease-in-out .3s;
 
 	}
 
 	.glyphicon-search{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
 		color: #0961A5;
 		font-size: 1.6em;
@@ -497,26 +570,30 @@ export const DivP4 = styled.div`
 `;
 
 export const DivP5 = styled.div`
-	background-image: url(${require('assets/Node-JS-s.jpg')});
+	background-image: url(${require('assets/Node-JS-xs.jpg')});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
-	height: 250px;
+	height: 300px;
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+	-o-transition: all ease-in-out .5s;
 	transition: all ease-in-out .5s;
-	display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
+
     padding-left: 0px!important;
     padding-right: 0px!important;
+    text-align: center;
 
     p{
+    	-moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
     	transition: opacity ease-in-out .3s;
     	opacity: 0;
     	color: #0961A5;
     	font-size: 2em;
     	font-weight: 700;
+    	padding-top: 110px;
     }
 
     #hoverbar{
@@ -528,7 +605,10 @@ export const DivP5 = styled.div`
 	    margin:0;
 	    padding:0;
 	    opacity: 0;
-	    transition: opacity ease-in-out .3s;
+	    -moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
+    	transition: opacity ease-in-out .3s;
 	    z-index: -1;
     }
 
@@ -537,27 +617,42 @@ export const DivP5 = styled.div`
 		.glyphicon-search{
 			opacity: 1;
 			cursor: pointer;
+			-moz-transition: all ease-in-out .3s;
+			-webkit-transition: all ease-in-out .3s;
+			-o-transition: all ease-in-out .3s;
 			transition: all ease-in-out .3s;
 		}
 
 		p{
-			transition: opacity ease-in-out .3s;
+			-moz-transition: opacity ease-in-out .3s;
+	    	-webkit-transition: opacity ease-in-out .3s;
+	    	-o-transition: opacity ease-in-out .3s;
+	    	transition: opacity ease-in-out .3s;
 			opacity: 1;
 		}
 	}
 
 	.glyphicon-search:hover{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
 		color: #EEEEEE;
 	}
 
 	&:hover > #hoverbar{
 		opacity: .9;
-		transition: opacity ease-in-out .3s;
+		-moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
+    	transition: opacity ease-in-out .3s;
 
 	}
 
 	.glyphicon-search{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
 		color: #0961A5;
 		font-size: 1.6em;

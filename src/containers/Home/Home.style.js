@@ -1,12 +1,11 @@
 import styled from 'styled-components';
 
 export const SpanR = styled.span`
-  position: absolute;
-  margin-bottom: 7px;
-  left: 3px;
   opacity: .4;
+  -moz-transition: opacity ease-in-out .3s;
+  -webkit-transition: opacity ease-in-out .3s;
+  -o-transition: opacity ease-in-out .3s;
   transition: opacity ease-in-out .3s;
-
 
   &:hover{
     opacity: 1;

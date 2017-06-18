@@ -7,10 +7,15 @@ export const Nav = styled.nav`
 	border-radius: 0;
 	border-bottom: none!important;
 	padding-top: 25px!important;
+
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+	-o-transition: all ease-in-out .5s;
 	transition: all ease-in-out .5s;
+
 	@media screen and (max-width: 767px) {
 		&{
-			padding-top: 5px!important;
+			padding-top: 0px!important;
 			border-bottom: none!important;
 		}
 	}
@@ -18,8 +23,12 @@ export const Nav = styled.nav`
 `;
 
 export const DivHeader = styled.div`
-	width: 130px!important;
-	height: 50px!important;
+	width: 120px!important;
+	height: 40px!important;
+
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+	-o-transition: all ease-in-out .5s;
 	transition: all ease-in-out .5s;
 
 	@media screen and (max-width: 767px) {
@@ -30,9 +39,9 @@ export const DivHeader = styled.div`
 `;
 
 export const DivImg = styled.div`
-	width: 100%;
-	margin: 0px 0% 0px 0%';
-	padding: 0px 0;
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+	-o-transition: all ease-in-out .5s;
 	transition: all ease-in-out .5s;
 
 	@media screen and (max-width: 767px) {
@@ -51,36 +60,40 @@ export const DivImg = styled.div`
 export const Img = styled.img`
 	width: 100%;
 	height: auto;
-	margin-left: 40px;
-	margin-top: -40px;
+	margin-left: 30px;
+	margin-top: -20px;
+	
+	-moz-transition: all ease-in-out .5s;
+	-webkit-transition: all ease-in-out .5s;
+	-o-transition: all ease-in-out .5s;
 	transition: all ease-in-out .5s;
 
 	@media screen and (min-width: 768px) and (max-width: 768px) {
 		&{
-			margin-top: -40px;
 			margin-left: 0px;
 		}
 	}
 
 	@media screen and (max-width: 767px) {
 		&{
-			margin-top: -20px;
+			margin-top: 0px;
 			margin-left: 0px;
 		}
 	}
 
 	@media screen and (max-width: 767px) and (orientation: landscape) {
 		&{
-			margin-top: -20px;
+			//margin-top: -20px;
 			margin-left: 0px;
 		}
 	}
 `;
 
 export const Ul = styled.ul`
-	margin-right: 0px!important;
+	margin-right: 35px!important;
 	@media screen and (max-width: 767px) {
 	    &{
+	    	margin-right: 0px!important;
 	    	overflow-y: hidden;
 	        background-color: #111;
 	        width: cover;
@@ -91,12 +104,8 @@ export const Ul = styled.ul`
 `;
 
 export const Div1 = styled.div`
-	padding-right: 50px!important;
+	padding-right: 0px!important;
 	color: #EEEEEE;
-	-webkit-transition: .5s;
-	-moz-transition: .5s;
-	-o-transition:  .5s;
-	transition: all ease-in-out .5s;
 	border-top: none!important;
 	box-shadow: none!important;
 	a:hover{
@@ -106,7 +115,7 @@ export const Div1 = styled.div`
 
 	@media screen and (max-width: 870px) {
 		&{
-			padding-right: 0px!important;
+			margin-right: 0px!important;
 		}
 	}
 `;
@@ -147,9 +156,11 @@ export const Li = styled.li`
 		opacity: 0;
 		-webkit-transition: opacity 0.5s, -webkit-transform 0.5s;
 		-moz-transition: opacity 0.5s, -moz-transform 0.5s;
+		-o-transition: opacity 0.5s, -o-transform 0.5s;
 		transition: opacity 0.5s, transform 0.5s;
 		-webkit-transform: translateY(-10px);
 		-moz-transform: translateY(-10px);
+		-o-transform: translateY(-10px);
 		transform: translateY(-10px);
 	}
 
@@ -178,25 +189,28 @@ export const Li = styled.li`
 `;
 
 export const DivContainer = styled.div`
-	padding-left: 50px;
-	a{
-		margin-right: 2px;
-	}
+	padding-right: 0px!important;
 	@media screen and (max-width: 767px) {
 	    &{
 	    	padding-left: 0px;
 	    }
+	}
 `;
 
 export const DivButton = styled.button`
 	border: none!important;
-	margin-right: 25px;
-	margin-top: 20px!important;
+	margin-right: 50px!important;
+	margin-top: 15px!important;
 	margin-bottom: 0px!important;
-	padding-top: 0px!important;
-	padding-right: 0px!important;
+	padding: 0px!important;
 	background: transparent !important;
-	//transition: all ease-in-out .5s;
+
+	@media screen and (max-width: 767px) {
+		&{
+			margin-right: 35px!important;
+			margin-top: 20px!important;
+		}
+	}
 
 	&:hover {
 	  background: transparent !important;
@@ -205,7 +219,12 @@ export const DivButton = styled.button`
 	.icon-bar {
 		width: 25px!important;
 		height: 3px!important;
-		transition: all ease-in-out 0.3s;
+
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
+		transition: all ease-in-out .3s;
+
 	}
 
 	.top-bar {

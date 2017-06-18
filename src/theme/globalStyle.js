@@ -3,10 +3,10 @@ import {injectGlobal} from 'styled-components';
 /* eslint-disable */
 injectGlobal`
 
-	@import url(https://fonts.googleapis.com/css?family=Lato);
+	@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 	html, body{
-	  font: 'Lato', sans-serif;
+	  font-family: 'Roboto', 'sans-serif';
 	  width: 100%;
       height: 100%;
       margin: 0;
@@ -14,12 +14,14 @@ injectGlobal`
 	}
 
 	[data-reactroot] {
+		font-family: 'Roboto', 'sans-serif';
         position: absolute;
         width: 100% !important;
         height: 100% !important;
     }
 
 	*{
+		font-family: 'Roboto', 'sans-serif';
 		padding: 0;
 		margin: 0;
 		box-sizing: border-box;
@@ -31,17 +33,6 @@ injectGlobal`
 		position: absolute;
 	}
 
-	.row.row {
-	  display: -webkit-box;
-	  display: -webkit-flex;
-	  display: -ms-flexbox;
-	  display: flex;
-	  flex-wrap: wrap;
-	}
-	.row.row > [class*='col-'] {
-	  display: flex;
-	  flex-direction: column;
-	}
 
 	/*FOOTER RESPOSIVE*/
 
@@ -76,10 +67,10 @@ injectGlobal`
 	        margin-bottom:0;
 	    }
 	    #icon{
-	    	font-size: 15px;
+	    	font-size: 20px;
 	    }
 	    .follow.follow{
-	    	font-size: 10px;
+	    	font-size: 12px;
 	    }
 	}
 
@@ -107,26 +98,22 @@ injectGlobal`
 		background-color: black!important;	
 		transition: all ease-in-out .5s;
 		opacity: .9;
-		z-index: 20;
+		z-index: 100;
 
 		#header{
 			width: 90px!important;
 			height: 50px!important;
-			//transition: all ease-in-out .5s;
-		}
-
-		#divimg{
-			//transition: ease-in-out .5s;
+			transition: all ease-in-out .5s;
 		}
 
 		img{
-			margin-top: -35px;
-			transition: ease-in-out .5s;
+			margin-top: -10px;
+			transition: all ease-in-out .5s;
 		}
 	}
 	@media screen and (max-width: 767px) {
 		#shrink{
-			padding-top: 5px!important;
+			padding-top: 0px!important;
 			background-color: black!important;	
 			transition: ease-in-out .5s;
 			opacity: .95;
@@ -134,17 +121,17 @@ injectGlobal`
 
 			#header{
 				width: auto!important;
-				height: 50px!important;
+				//height: 50px!important;
 				transition: all ease-in-out .5s;
 			}
 
 			.navbar-toggle.navbar-toggle{
 				transition: all ease-in-out .5s;
-				margin-top: 15px!important;
+				//margin-top: 15px!important;
 			}
 
 			img{
-				margin-top: -25px;
+				margin-top: 0px;
 				transition: ease-in-out .5s;
 			}
 		}
@@ -158,7 +145,7 @@ injectGlobal`
 	.rightControl{
 	  margin-top: 80%;
 	  right: 35%;
-	  opacity: .15;
+	  opacity: 0;
 	  transition: opacity ease-in-out .35s;
 
 	  &:hover{
@@ -201,7 +188,7 @@ injectGlobal`
 	  margin-top: 80%
 	  right: 50%;
 
-	  opacity: .15;
+	  opacity: 0;
 	  transition: opacity ease-in-out .35s;
 
 	  &:hover{
@@ -232,7 +219,7 @@ injectGlobal`
 	  position: absolute;
 	  bottom: 11%;
 	  left: 50.5%;
-	  margin-left:-20px;
+	  margin-left: -14px;
 	  cursor: pointer;
 	}
 

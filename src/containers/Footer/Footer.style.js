@@ -138,7 +138,7 @@ export const LinksDiv = styled.div`
 	}
 
 	a:hover {
-		color: #FFFFFF;
+		color: #0961A5;
 	}
 `;
 
@@ -153,8 +153,16 @@ export const Social = styled.div`
 	}
 
 	A:hover {
-		color: #FFFFFF;
+		color: #0961A5;
+		span{
+			-webkit-transform: rotate(360deg);
+			-moz-transform: rotate(360deg);
+			-ms-transform: rotate(360deg);
+			-o-transform: rotate(360deg);
+			transform: rotate(360deg);
+		}
 	}
+
 `;
 
 export const SpanIcon = styled.span`
@@ -167,14 +175,6 @@ export const SpanIcon = styled.span`
 	-ms-transition: -ms-transform .3s linear;
 	-o-transition:  -o-transform .3s linear;
 	transition: transform .3s linear;
-
-	&:hover{
-		-webkit-transform: rotate(360deg);
-		-moz-transform: rotate(360deg);
-		-ms-transform: rotate(360deg);
-		-o-transform: rotate(360deg);
-		transform: rotate(360deg);
-	}
 `;
 export const SpanInfo = styled.span`
 	display: inline-block;

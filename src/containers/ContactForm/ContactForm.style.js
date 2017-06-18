@@ -5,13 +5,13 @@ export const Div1 = styled.div`
 	color: #EEEEEE;
 	h1{
 		text-transform: uppercase;
-		margin-top: 0;
-		margin-left: 5%;
+		margin-top: 20px;
+		margin-left: 10%;
 		font-size: 2.5em;
-		font-weight: 800;
+		font-weight: 900;
 		color: #0961A5;
 
-		@media screen and (max-width: 992px) {
+		@media screen and (max-width: 991px) {
 			&{
 				text-align: center
 				margin-left: 0;
@@ -26,7 +26,7 @@ export const Div1 = styled.div`
 		}
 	}
 	h3{
-		margin-top: 5%;
+		margin-top: 10%;
 		margin-bottom: 5%;
 		margin-left: 10%;
 		font-weight: 400;
@@ -75,7 +75,6 @@ export const Div1 = styled.div`
 export const Span1 = styled.span`
   font-size: 1.8em;
   margin-left: 11%;
-  margin-right: 1%;
 
   h4{
   	padding-bottom: 3%;
@@ -91,43 +90,42 @@ export const Span1 = styled.span`
   }
 `;
 
-export const Span2 = styled.span`
-  fontSize: 1.8em;
-  margin-left: 11%;
-  margin-right: 1%;
-
-  h4{
-  	margin-bottom: 0;
-    display: inline-block;
-    font-size: .8em;
-    padding-left: 1%;
-  }
-
-  @media screen and (max-width: 400px) {
-  	&{
-  		font-size: 1.6em;
-  	}
-  }
-`;
-
-
 export const Div2 = styled.div`
-	background-image: url(${require('assets/bkg7.jpeg')});
+	background-image: url(${require('assets/bkg7-xs.jpg')});
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
+	padding-left: 150px;
+	padding-right: 150px;
+	height: 560px;
+	padding-top: 100px;
+
+	@media only screen and (max-device-width: 1024px) {
+    	&{
+        	background-attachment: scroll;
+        }
+	}
+
+	@media screen and (max-width: 991px) {
+		padding-left: 180px;
+		padding-right: 180px;
+	}
+	@media screen and (max-width: 767px) {
+		padding-left: 50px;
+		padding-right: 50px;
+	}
 `;
 
 export const Form = styled.form`
-	padding-right: 20%;
-	padding-left: 20%;
+	/*padding-right: 20%;
+	padding-left: 20%;*/
 	padding-top: 0;
 	padding-bottom: 0;
 
 
 	input {
-	    height: 40px; 
+	    height: 45px; 
 	    width: 100%; 
 	    padding: 15px 10px;
 	}
@@ -232,6 +230,7 @@ export const Span = styled.span`
 export const Ul = styled.ul`
 	list-style-type: none;
 	list-style-position: outside;
+	margin-bottom: 0px;
 	li{
 		padding: 10px; 
 		margin: 5px;
@@ -288,7 +287,7 @@ export const DivThanks = styled.div`
 	}
 
 
-	@media screen and (min-width: 992px) {
+	@media screen and (min-width: 991px) {
 		&{
 			margin-top: 14%;
 		}

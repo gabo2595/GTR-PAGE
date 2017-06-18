@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {DivP1, DivP2, DivP3, DivP4, DivP5, DivImg, DivTitle, DivContainer, DivLinks, Img, DivLinks1} from './Portfolio.style';
+import {DivP1, DivP2, DivP3, DivP4, DivP5, DivImg, DivContainer, DivLinks, DivLinks1, Img} from './Portfolio.style';
 var Scroll = require('react-scroll');
 var Link = Scroll.Link;
 
@@ -100,13 +100,9 @@ export class Portfolio extends Component {
 	render() {
 		return (
 			<DivContainer className="container-fluid">
-				<div className="row" style={{paddingTop: 60}}>
-					<DivTitle data-aos="slide-right" data-aos-duration="500" className="col-xs-12 col-sm-12 col-md-12">
-						<h1>Portafolio</h1>
-					</DivTitle>
-				</div>
 				<DivImg id={this.state.img1} className="row">
 					<div className="col-xs-12 col-sm-12 col-md-5">
+						<span onClick={this.setId1Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 						<h2>Página web Gabriel Torres R.</h2>
 						<p>
 							Página personal de presentación con la finalidad de darme
@@ -138,21 +134,20 @@ export class Portfolio extends Component {
 							<DivLinks1 className="col-xs-12 col-sm-4 col-md-6">
 								<h3>Links:</h3>
 								<ul>
-									<li><a target="_blank" href="https://github.com/gabo2595/GTR-Page">Repositorio GitHub</a></li>
+									<li><a target="_blank" href="https://github.com/gabo2595/GTR-PAGE">Repositorio GitHub</a></li>
 								</ul>
 							</DivLinks1>
 						</div>
-						{/*<span onClick={this.setId1Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left hidden-xs"></span>*/}
 					</div>
 					<div id="divPic" className="col-xs-12 col-sm-12 col-md-7">
 						<Img id="img" alt="self" style={{width: '100%', height: 'auto'}}
-							src={require('assets/GTR-Webpage-l.png')}
+							src={require('assets/WP-2.jpg')}
 						/>
-						<span style={{paddingTop: 0}} onClick={this.setId1Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 					</div>
 				</DivImg>
 				<DivImg id={this.state.img2} className="row">
 					<div className="col-xs-12 col-sm-12 col-md-5">
+						<span onClick={this.setId2Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 						<h2>SIGPIE</h2>
 						<p>
 							Por sus siglas: Sistema de Gestion del Programa de Intercambio Estudiantil, es un sistema de
@@ -164,7 +159,7 @@ export class Portfolio extends Component {
 							exigidos, optimizando en un 66% el tiempo dedicado, ya que debían llenar manualmente 3 planillas, el proceso
 							se diseñó con la bondad de generar un archivo en formato PDF el cual debe ser entregado por el estudiante. 
 						</p>
-						<p>
+						<p style={{marginBottom: 0}}>
 							El personal del Departamento de Estudios Internacionales y de Cooperación (DRIC)
 							puede administrar fácilmente la información del sistema con un <em>login</em> administrativo y la opción
 							de descargar un archivo .CSV con los datos requeridos de los estudiantes que aplicaron al programa.
@@ -201,17 +196,16 @@ export class Portfolio extends Component {
 								</ul>
 							</DivLinks>
 						</div>
-						{/*<span onClick={this.setId2Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left hidden-xs"></span>*/}
 					</div>
 					<div id="divPic" className="col-xs-12 col-sm-12 col-md-7">
 						<Img id="img" alt="self" style={{width: '100%', height: 'auto'}}
-							src={require('assets/SIGPIE.png')}
+							src={require('assets/SIGPIE.jpeg')}
 						/>
-						<span onClick={this.setId2Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 					</div>
 				</DivImg>
 				<DivImg id={this.state.img3} className="row">
 					<div className="col-xs-12 col-sm-12 col-md-5">
+						<span onClick={this.setId3Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 						<h2>SIGPAE</h2>
 						<p>
 							Por sus siglas: Sistema de Gestión de Programas Analíticos de Estudio, es una aplicación web desarrollada
@@ -219,7 +213,7 @@ export class Portfolio extends Component {
 							almacenando cada programa en una base de datos para poder encontrarlos de una manera sencilla, y además
 							poder hacer una unificación del formato de todos estos programas analíticos de la universidad.
 						</p>
-						<p>
+						<p style={{marginBottom: 0}}>
 							El usuario carga un .PDF del programa de la materia y la aplicación detecta automáticamente ciertos datos
 							importantes como el código de la materia, el período y el departamento al cual pertenece dicho programa.
 							Luego se transcriben los otros datos faltantes y necesarios para la correcta identificación del programa 
@@ -253,17 +247,16 @@ export class Portfolio extends Component {
 								</ul>
 							</DivLinks>
 						</div>
-						{/*<span onClick={this.setId3Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left hidden-xs"></span>*/}
 					</div>
 					<div id="divPic" className="col-xs-12 col-sm-12 col-md-7">
 						<Img id="img" alt="self" style={{width: '100%', height: 'auto'}}
-							src={require('assets/usb-m.jpg')}
+							src={require('assets/usb-xs.jpg')}
 						/>
-						<span onClick={this.setId3Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 					</div>
 				</DivImg>
 				<DivImg id={this.state.img4} className="row">
 					<div className="col-xs-12 col-sm-12 col-md-5">
+					<span onClick={this.setId4Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 						<h2>Bot de Twitter</h2>
 						<p>
 							Sistema de respuesta y envío automático a través de mensajería desarrollado en NodeJS
@@ -293,13 +286,13 @@ export class Portfolio extends Component {
 					</div>
 					<div id="divPic" className="col-xs-12 col-sm-12 col-md-7">
 						<Img id="img" alt="self" style={{width: '100%', height: 'auto'}}
-							src={require('assets/twitter1-m.jpg')}
+							src={require('assets/twitter1-s.jpg')}
 						/>
-						<span onClick={this.setId4Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 					</div>
 				</DivImg>
 				<DivImg id={this.state.img5} className="row">
 					<div className="col-xs-12 col-sm-12 col-md-5">
+						<span onClick={this.setId5Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
 						<h2>Sistema Automatizado de Generación de Credenciales</h2>
 						<p>
 							Sistema automatizado que permite elaborar credenciales para el proceso de elecciones nacionales
@@ -328,49 +321,53 @@ export class Portfolio extends Component {
 								</ul>
 							</div>
 						</div>
-						{/*<span onClick={this.setId5Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left hidden-xs"></span>*/}
 					</div>
 					<div id="divPic" className="col-xs-12 col-sm-12 col-md-7">
 						<Img id="img" alt="self" style={{width: '100%', height: 'auto'}}
-							src={require('assets/Node-JS-l.jpg')}
+							src={require('assets/Node-JS-xs.jpg')}
 						/>
-						<span onClick={this.setId5Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left"></span>
+						{/*<span onClick={this.setId5Back.bind(this)} className="glyphicon glyphicon-circle-arrow-left hidden-sm"></span>*/}
 					</div>
 				</DivImg>
-				<div style={{paddingBottom: 100}} id={this.state.id1} className="row">
+				<div id={this.state.id1} className="row">
 					<DivP1 data-aos="flip-right" data-aos-duration="900" className="col-xs-12 col-sm-6 col-md-4">
 						<div id="hoverbar"></div>
 						<p>Gabriel Torres Ruiz</p>
-						<Link style={{textDecoration: 'none', padding: '8px 15px 8px 15px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={0} duration={500} delay={0}>
-							<span onClick={this.setId1.bind(this)} className="glyphicon glyphicon-search" aria-hidden="true"></span>
+						<Link style={{textDecoration: 'none', padding: '0px 0px 0px 0px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={500} delay={0}>
+						<span onClick={this.setId1.bind(this)} className="glyphicon glyphicon-search" aria-hidden="true">
+						</span>
 						</Link>
 					</DivP1>
-					<DivP2 data-aos="flip-up" data-aos-duration="900" data-aos-delay="100" className="col-xs-12 col-sm-6 col-md-4">
+					<DivP2 data-aos="flip-left" data-aos-duration="900" data-aos-delay="100" className="col-xs-12 col-sm-6 col-md-4">
 						<div id="hoverbar"></div>
 						<p>SIGPIE</p>
-						<Link style={{textDecoration: 'none', padding: '8px 15px 8px 15px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={0} duration={500} delay={0}>
-							<span onClick={this.setId2.bind(this)} className="glyphicon glyphicon-search" aria-hidden="true"></span>
+						<Link style={{textDecoration: 'none', padding: '0px 0px 0px 0px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={500} delay={0}>
+						<span onClick={this.setId2.bind(this)} className="glyphicon glyphicon-search" aria-hidden="true">
+						</span>
 						</Link>
 					</DivP2>
 					<DivP3 data-aos="flip-left" data-aos-duration="900" data-aos-delay="200" className="col-xs-12 col-sm-6 col-md-4">
 						<div id="hoverbar"></div>
 						<p>SIGPAE</p>
-						<Link style={{textDecoration: 'none', padding: '8px 15px 8px 15px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={0} duration={500} delay={0}>
-							<span onClick={this.setId3.bind(this)} className="glyphicon glyphicon-search" aria-hidden="true"></span>
+						<Link style={{textDecoration: 'none', padding: '0px 0px 0px 0px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={500} delay={0}>
+						<span onClick={this.setId3.bind(this)} className="glyphicon glyphicon-search" aria-hidden="true">
+						</span>
 						</Link>
 					</DivP3>
-					<DivP4 data-aos="slide-right" data-aos-duration="900" data-aos-delay="300" className="col-xs-12 col-sm-6 col-md-4">
+					<DivP4 data-aos="slide-right" data-aos-duration="900" data-aos-delay="300" className="col-xs-12 col-sm-6 col-md-6">
 						<div id="hoverbar"></div>
 						<p>Bot de Twitter</p>
-						<Link style={{textDecoration: 'none', padding: '8px 15px 8px 15px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={0} duration={500} delay={0}>
-							<span onClick={this.setId4.bind(this)} className="glyphicon glyphicon-search" aria-hidden="true"></span>
+						<Link style={{textDecoration: 'none', padding: '0px 0px 0px 0px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={500} delay={0}>
+						<span onClick={this.setId4.bind(this)} className="glyphicon glyphicon-search" aria-hidden="true">
+						</span>
 						</Link>
 					</DivP4>
-					<DivP5 data-aos="slide-up" data-aos-duration="900" data-aos-delay="400" className="col-xs-12 col-sm-6 col-md-4">
+					<DivP5 data-aos="slide-up" data-aos-duration="900" data-aos-delay="400" className="col-xs-12 col-sm-6 col-md-6">
 						<div id="hoverbar"></div>
 						<p>SAGC</p>
-						<Link style={{textDecoration: 'none', padding: '8px 15px 8px 15px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={0} duration={500} delay={0}>
-							<span onClick={this.setId5.bind(this)} className="glyphicon glyphicon-search" aria-hidden="true"></span>
+						<Link style={{textDecoration: 'none', padding: '0px 0px 0px 0px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={500} delay={0}>
+						<span onClick={this.setId5.bind(this)} className="glyphicon glyphicon-search" aria-hidden="true">
+						</span>
 						</Link>
 					</DivP5>
 				</div>

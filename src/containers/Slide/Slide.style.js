@@ -5,8 +5,7 @@ export const Div = styled.div`
 `;
 
 export const Div1 = styled.div`
-	background-image: url(${require('assets/coding3.jpg')});
-	filter: brightness(35%);
+	background-image: url(${require('assets/coding3-shad.jpeg')});
 	height: 100vh;
 	width: 100wh;
 
@@ -14,12 +13,20 @@ export const Div1 = styled.div`
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
+
+	@media only screen and (max-device-width: 1024px) {
+    	&{
+        	background-attachment: scroll;
+        }
+	}
 `;
 
 export const Div2 = styled.div`
-	background-image: url(${require('assets/usb.jpg')});
-	filter: brightness(40%);
+	background-image: url(${require('assets/usb-shad2.jpeg')});
 	height: 100vh;
 	width: 100wh;
 
@@ -27,12 +34,20 @@ export const Div2 = styled.div`
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
+
+	@media only screen and (max-device-width: 1024px) {
+    	&{
+        	background-attachment: scroll;
+        }
+	}
 `;
 
 export const Div3 = styled.div`
-	background-image: url(${require('assets/coding2.jpeg')});
-	filter: brightness(50%);
+	background-image: url(${require('assets/coding2-shad.jpeg')});
 	height: 100vh;
 	width: 100wh;
 
@@ -40,7 +55,16 @@ export const Div3 = styled.div`
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
 	background-size: cover;
+
+	@media only screen and (max-device-width: 1024px) {
+    	&{
+        	background-attachment: scroll;
+        }
+	}
 `;
 
 export const Caption = styled.div`

@@ -19,7 +19,7 @@ export const Div0 = styled.div`
 		letter-spacing: 3px;
 		text-transform: uppercase;
 		color: #0961A5;
-		font-weight: 800;
+		font-weight: 900;
 		font-size: 2.5em;
 		padding-left: 50px;
 	}
@@ -52,6 +52,9 @@ export const Div1 = styled.div`
 	  height: 100%;
 	  position: absolute;
 	  transform-style: preserve-3d;
+	  -moz-transition: transform 1s;
+	  -webkit-transition: transform 1s;
+	  -o-transition: transform 1s;
 	  transition: transform 1s;
 	}
 	#card figure {
@@ -67,10 +70,14 @@ export const Div1 = styled.div`
 	  text-align: center;
 
 	  h2{
+	  	color: #0961A5;
 	  	margin-top: 15px;
-	  	font-weight: 700;
+	  	font-weight: 600;
 	  	font-size: 1.5em;
 	  	text-transform: uppercase;
+	  }
+	  p{
+	  	font-size: 1.1em;
 	  }
 	}
 	#card .back {
@@ -138,6 +145,9 @@ export const Div2 = styled.div`
 	  height: 100%;
 	  position: absolute;
 	  transform-style: preserve-3d;
+	  -moz-transition: transform 1s;
+	  -webkit-transition: transform 1s;
+	  -o-transition: transform 1s;
 	  transition: transform 1s;
 	}
 	#card1 figure {
@@ -153,10 +163,14 @@ export const Div2 = styled.div`
 	  text-align: center;
 
 	  h2{
+	  	color: #0961A5;
 	  	margin-top: 15px;
-	  	font-weight: 700;
+	  	font-weight: 600;
 	  	font-size: 1.5em;
 	  	text-transform: uppercase;
+	  }
+	  p{
+	  	font-size: 1.1em;
 	  }
 	}
 	#card1 .back {
@@ -317,6 +331,9 @@ export const Div3 = styled.div`
 	  height: 100%;
 	  position: absolute;
 	  transform-style: preserve-3d;
+	  -moz-transition: transform 1s;
+	  -webkit-transition: transform 1s;
+	  -o-transition: transform 1s;
 	  transition: transform 1s;
 	}
 	#card2 figure {
@@ -332,10 +349,14 @@ export const Div3 = styled.div`
 	  text-align: center;
 
 	  h2{
+	  	color: #0961A5;
 	  	margin-top: 15px;
-	  	font-weight: 700;
+	  	font-weight: 600;
 	  	font-size: 1.5em;
 	  	text-transform: uppercase;
+	  }
+	  p{
+	  	font-size: 1.1em;
 	  }
 	}
 	#card2 .back {
@@ -408,7 +429,10 @@ export const Div4 = styled.div`
 	  height: 100%;
 	  position: absolute;
 	  transform-style: preserve-3d;
-	  transition: transform 1s;
+	  -moz-transition: transform 1s;
+  	  -webkit-transition: transform 1s;
+  	  -o-transition: transform 1s;
+  	  transition: transform 1s;
 	}
 	#card3 figure {
 	  margin: 0;
@@ -423,10 +447,14 @@ export const Div4 = styled.div`
 	  text-align: center;
 
 	  h2{
+	  	color: #0961A5;
 	  	margin-top: 15px;
-	  	font-weight: 700;
+	  	font-weight: 600;
 	  	font-size: 1.5em;
 	  	text-transform: uppercase;
+	  }
+	  p{
+	  	font-size: 1.1em;
 	  }
 	}
 	#card3 .back {
@@ -473,6 +501,7 @@ export const Div4 = styled.div`
 `;
 
 export const Div = styled.div`
+	font-size: 1.2em;
 	position: absolute;
 	width: 50%;
 	margin-top: 10px;
@@ -503,6 +532,7 @@ export const Button = styled.div`
 	  content: '';
 	  -webkit-transition: top .4s;
 	  -moz-transition: top .4s;
+	  -o-transition: top .4s;
 	  transition: top .4s;
 	}
 
@@ -516,6 +546,7 @@ export const Button = styled.div`
 	  content: '';
 	  -webkit-transition: height .4s;
 	  -moz-transition: height .4s;
+	  -o-transition: top .4s;
 	  transition: height .4s;
 	}
 

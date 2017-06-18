@@ -53,14 +53,14 @@ export class Home extends Component {
 					<Waypoint onEnter={this.setClassN.bind(this, "shrink")}/>
 					<About/>
 				</Element>
+				<Breaker/>
 				<Element name="test2">
 					<Skills/>
 				</Element>
-				<Breaker/>
 				<Element name="test3">
 					<Portfolio/>
 				</Element>
-				<Element name="test4" style={{zIndex: '-100'}}>
+				<Element name="test4">
 					<ContactForm/>
 				</Element>
 				<Footer/>

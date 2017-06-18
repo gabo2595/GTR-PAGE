@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ImageButton, P1, P2, H2, Button, Div, DivRow, ImageButton1} from './About.style';
+import {ImageButton, P1, P2, H2, Button, Div, DivRow} from './About.style';
 import Zoomy from 'react-zoomy';
 var Scroll = require('react-scroll');
 var Link = Scroll.Link;
@@ -9,14 +9,7 @@ export class About extends Component {
 		return (
 			<div className="container-fluid">
 				<DivRow className="row">
-					<div className="col-xs-12 col-sm-12 col-md-6 hidden-sm hidden-md hidden-lg show-xs">
-						<ImageButton1 className="pic" data-aos="fade-right" data-aos-duration="1500">
-							<img alt="self" style={{width: '100%', height: 'auto'}}
-								src={require('assets/self-th2.jpg')}
-							/>
-						</ImageButton1>
-					</div>
-					<div className="col-xs-12 col-sm-12 col-md-6 text-center hidden-xs">
+					<div className="col-xs-12 col-sm-12 col-md-6 text-center">
 						<Zoomy
 						    imageUrl={require('assets/self.jpg')}
 						    renderThumbnail={({ showImage }) => 
@@ -29,16 +22,16 @@ export class About extends Component {
 						    scale={[1.1, 1.1]}
 						    imageProps={{
 						      style: {
-						        width: '100%',
+						        width: '85%',
 						        height: 'auto',
 						      }
 						    }}
 						/>
 					</div>
-					<div data-aos="fade-up" data-aos-duration="1200" className="col-xs-12 col-sm-12 col-md-6">
+					<div style={{paddingRight: '10%'}} data-aos="fade-up" data-aos-duration="1200" className="col-xs-12 col-sm-12 col-md-6">
 						<H2 className="myName">Acerca de mi</H2>
 						<P1 className="P1">
-					   	¡Hola!, mi nombre es Gabriel Torres Ruiz, soy estudiante de la carrera Ingeniería de Computación
+					   	¡Hola! Mi nombre es Gabriel Torres Ruiz, soy estudiante de la carrera Ingeniería de Computación
 					   	en la Universidad Simón Bolívar. En general, me considero una persona responsable, de rápido aprendizaje y 
 					   	pro-activo. Me gusta esforzarme en todo lo que hago y estoy acostumbrado a siempre ir un poco más
 					   	allá. Se me da muy bien relacionarme con otras personas, por lo que estoy muy familiarizado en 
