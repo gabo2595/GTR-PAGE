@@ -2,7 +2,7 @@
   "name": "GTR-PAGE",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://gabo2595.github.io/GTR-PAGE",
+  "homepage": "https://gabo2595.github.io",
   "dependencies": {
     "aos": "^2.1.1",
     "react": "^15.5.4",
@@ -61,7 +61,7 @@
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
     "test": "node scripts/test.js --env=jsdom",
-    "deploy": "npm run build&&gh-pages -d build"
+    "deploy": "npm run build && gh-pages -d build -b master"
   },
   "jest": {
     "collectCoverageFrom": [

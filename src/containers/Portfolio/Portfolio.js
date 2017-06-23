@@ -330,7 +330,7 @@ export class Portfolio extends Component {
 					</div>
 				</DivImg>
 				<div id={this.state.id1} className="row">
-					<DivP1 data-aos="flip-right" data-aos-duration="900" className="col-xs-12 col-sm-6 col-md-4">
+					<DivP1 data-aos="flip-right" data-aos-duration="900" data-aos-once="true" className="col-xs-12 col-sm-6 col-md-4">
 						<div id="hoverbar"></div>
 						<p>Gabriel Torres Ruiz</p>
 						<Link style={{textDecoration: 'none', padding: '0px 0px 0px 0px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={500} delay={0}>
@@ -338,7 +338,7 @@ export class Portfolio extends Component {
 						</span>
 						</Link>
 					</DivP1>
-					<DivP2 data-aos="flip-left" data-aos-duration="900" data-aos-delay="100" className="col-xs-12 col-sm-6 col-md-4">
+					<DivP2 data-aos="flip-left" data-aos-duration="900" data-aos-delay="100" data-aos-once="true" className="col-xs-12 col-sm-6 col-md-4">
 						<div id="hoverbar"></div>
 						<p>SIGPIE</p>
 						<Link style={{textDecoration: 'none', padding: '0px 0px 0px 0px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={500} delay={0}>
@@ -346,7 +346,7 @@ export class Portfolio extends Component {
 						</span>
 						</Link>
 					</DivP2>
-					<DivP3 data-aos="flip-left" data-aos-duration="900" data-aos-delay="200" className="col-xs-12 col-sm-6 col-md-4">
+					<DivP3 data-aos="flip-left" data-aos-duration="900" data-aos-delay="200" data-aos-once="true" className="col-xs-12 col-sm-6 col-md-4">
 						<div id="hoverbar"></div>
 						<p>SIGPAE</p>
 						<Link style={{textDecoration: 'none', padding: '0px 0px 0px 0px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={500} delay={0}>
@@ -354,7 +354,7 @@ export class Portfolio extends Component {
 						</span>
 						</Link>
 					</DivP3>
-					<DivP4 data-aos="slide-right" data-aos-duration="900" data-aos-delay="300" className="col-xs-12 col-sm-6 col-md-6">
+					<DivP4 data-aos="slide-right" data-aos-duration="900" data-aos-delay="300" data-aos-once="true" className="col-xs-12 col-sm-6 col-md-6">
 						<div id="hoverbar"></div>
 						<p>Bot de Twitter</p>
 						<Link style={{textDecoration: 'none', padding: '0px 0px 0px 0px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={500} delay={0}>
@@ -362,7 +362,7 @@ export class Portfolio extends Component {
 						</span>
 						</Link>
 					</DivP4>
-					<DivP5 data-aos="slide-up" data-aos-duration="900" data-aos-delay="400" className="col-xs-12 col-sm-6 col-md-6">
+					<DivP5 data-aos="slide-up" data-aos-duration="900" data-aos-delay="400" data-aos-once="true" className="col-xs-12 col-sm-6 col-md-6">
 						<div id="hoverbar"></div>
 						<p>SAGC</p>
 						<Link style={{textDecoration: 'none', padding: '0px 0px 0px 0px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={500} delay={0}>

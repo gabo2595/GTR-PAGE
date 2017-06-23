@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import {Form, Ul, Div1, Div2, Span1, DivThanks} from './ContactForm.style';
+/*import GoogleMapReact from 'google-map-react';*/
 
 export class ContactForm extends Component {
 	constructor(props){
@@ -29,14 +30,19 @@ export class ContactForm extends Component {
 				border: '',
 				boxS: '',
 			});
-		}.bind(this),3000);
+		}.bind(this),5000);
 	}
+
+	/*static defaultProps = {
+	    center: {lat: 10.4805937, lng: -66.90360629999998},
+	    zoom: 11
+	};*/
 
 	render() {
 		return (
 			<div className="container-fluid">
 				<div style={{height: 560}} className="row">
-					<Div1 style={{height: 560, paddingTop: 100}} data-aos="slide-right" data-aos-anchor-placement="top-bottom" className="col-xs-12 col-sm-12 col-md-5">
+					<Div1 style={{height: 560, paddingTop: 100}} data-aos="slide-right" data-aos-once="true" data-aos-anchor-placement="top-bottom" className="col-xs-12 col-sm-12 col-md-5">
 						<div>
 							<h1>Contáctame</h1>
 							<h3>¿QUÉ NECESITAS?</h3>
@@ -47,10 +53,39 @@ export class ContactForm extends Component {
 							</p>
 							<Span1 id="span1" className="glyphicon glyphicon-map-marker"></Span1>
 							<h4 style={{display: 'inline-block'}}>Caracas, Venezuela</h4>
+							
+
+							{/*const AnyReactComponent = ({ text }) => (
+							  <div style={{
+							    position: 'relative', color: 'white', background: 'blue',
+							    height: 40, width: 60, top: -20, left: -30,    
+							  }}>
+							    {text}
+							  </div>
+							);
+
+							static defaultProps = {
+							    center: {lat: 10.4805937, lng: -66.90360629999998},
+							    zoom: 11
+							};
+
+
+							<div style={{width: '100%', height: '400px'}}>
+								<GoogleMapReact
+								        defaultCenter={this.props.center}
+								        defaultZoom={this.props.zoom}
+								      >
+								        <AnyReactComponent 
+								          lat={10.4805937} 
+								          lng={-66.90360629999998} 
+								          text={'Caracas'} 
+								        />
+								</GoogleMapReact>
+							</div>*/}
 						</div>
 					</Div1>
 					<Div2 className="col-xs-12 col-sm-12 col-md-7">
-						<Form data-aos="fade-in" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyxUIvyz_70gCvixgbKix-ZyRtCfIV4rSizDMeSEGKknaw8et60/exec">
+						<Form data-aos="fade-in" data-aos-once="true" id="gform" method="POST" action="https://script.google.com/macros/s/AKfycbyxUIvyz_70gCvixgbKix-ZyRtCfIV4rSizDMeSEGKknaw8et60/exec">
 							<Ul>
 							    <li>
 							        <input id="name" type="text" name="Nombre" placeholder="Nombre*" required/>

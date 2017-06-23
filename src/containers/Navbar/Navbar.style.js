@@ -207,8 +207,12 @@ export const DivButton = styled.button`
 
 	@media screen and (max-width: 767px) {
 		&{
-			margin-right: 35px!important;
-			margin-top: 20px!important;
+			margin-right: 0px!important;
+			margin-top: 0px!important;
+			padding-right: 35px!important;
+			padding-top: 20px!important;
+			padding-left: 35px!important;
+			//padding-bottom: 20px!important;
 		}
 	}
 

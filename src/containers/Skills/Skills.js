@@ -40,10 +40,10 @@ export class Skills extends Component {
 		return (
 			<div className="container-fluid">
 				<DivRow className="row">
-					<Div0 data-aos="fade-right" data-aos-duration="500" className="col-xs-12 col-sm-12 col-md-12">
+					<Div0 data-aos="fade-right" data-aos-duration="500" data-aos-once="true" className="col-xs-12 col-sm-12 col-md-12">
 						<h1>Habilidades</h1>
 					</Div0>
-					<Div1 data-aos="fade-up" className="col-xs-12 visible-xs">
+					<Div1 data-aos="fade-up" data-aos-once="true" className="col-xs-12 visible-xs">
 						<div style={{width: '70%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card" className={this.state.classF1}>
@@ -75,7 +75,7 @@ export class Skills extends Component {
 							</Div>
 						</div>
 					</Div1>
-					<Div1 data-aos="fade-up" className="col-sm-6 col-md-3 hidden-xs">
+					<Div1 data-aos="fade-up" data-aos-once="true" className="col-sm-6 col-md-3 hidden-xs">
 						<div style={{width: '75%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card" className={this.state.classF1}>
@@ -107,7 +107,7 @@ export class Skills extends Component {
 							</Div>
 						</div>
 					</Div1>
-					<Div2 data-aos="fade-up" className="col-xs-12 visible-xs">
+					<Div2 data-aos="fade-up" data-aos-once="true" className="col-xs-12 visible-xs">
 						<div style={{width: '70%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card1" className={this.state.classF2}>
@@ -151,7 +151,7 @@ export class Skills extends Component {
 							</Div>
 						</div>
 					</Div2>
-					<Div2 data-aos="fade-up" data-aos-delay="200" className="col-sm-6 col-md-3 hidden-xs">
+					<Div2 data-aos="fade-up" data-aos-delay="200" data-aos-once="true" className="col-sm-6 col-md-3 hidden-xs">
 						<div style={{width: '75%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card1" className={this.state.classF2}>
@@ -195,7 +195,7 @@ export class Skills extends Component {
 							</Div>
 						</div>
 					</Div2>
-					<Div3 data-aos="fade-up" className="col-xs-12 visible-xs">
+					<Div3 data-aos="fade-up" data-aos-once="true" className="col-xs-12 visible-xs">
 						<div style={{width: '70%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card2" className={this.state.classF3}>
@@ -229,7 +229,7 @@ export class Skills extends Component {
 							</Div>
 						</div>
 					</Div3>
-					<Div3 data-aos="fade-up" data-aos-delay="400" className="col-sm-6 col-md-3 hidden-xs">
+					<Div3 data-aos="fade-up" data-aos-delay="400" data-aos-once="true" className="col-sm-6 col-md-3 hidden-xs">
 						<div style={{width: '75%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card2" className={this.state.classF3}>
@@ -263,7 +263,7 @@ export class Skills extends Component {
 							</Div>
 						</div>
 					</Div3>
-					<Div4 data-aos="fade-up" className="col-xs-12 visible-xs">
+					<Div4 data-aos="fade-up" data-aos-once="true" className="col-xs-12 visible-xs">
 						<div style={{width: '70%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card3" className={this.state.classF4}>
@@ -294,7 +294,7 @@ export class Skills extends Component {
 							</Div>
 						</div>
 					</Div4>
-					<Div4 data-aos="fade-up" data-aos-delay="600" className="col-sm-6 col-md-3 hidden-xs">
+					<Div4 data-aos="fade-up" data-aos-delay="600" data-aos-once="true" className="col-sm-6 col-md-3 hidden-xs">
 						<div style={{width: '75%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card3" className={this.state.classF4}>

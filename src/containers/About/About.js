@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import {ImageButton, P1, P2, H2, Button, Div, DivRow} from './About.style';
+import {ImageButton, P1, P2, H2, Button, Div, DivRow, DivAboutMe} from './About.style';
 import Zoomy from 'react-zoomy';
 var Scroll = require('react-scroll');
 var Link = Scroll.Link;
@@ -13,7 +13,7 @@ export class About extends Component {
 						<Zoomy
 						    imageUrl={require('assets/self.jpg')}
 						    renderThumbnail={({ showImage }) => 
-						    	<ImageButton className="pic" data-aos="flip-left" data-aos-duration="1200" onClick={showImage}>
+						    	<ImageButton className="pic" data-aos="flip-left" data-aos-duration="1200" data-aos-once="true" onClick={showImage}>
 						    		<img alt="self-md" style={{width: '100%', height: 'auto'}}
 						    			src={require('assets/self-th2.jpg')}
 						    		/>
@@ -28,7 +28,7 @@ export class About extends Component {
 						    }}
 						/>
 					</div>
-					<div style={{paddingRight: '10%'}} data-aos="fade-up" data-aos-duration="1200" className="col-xs-12 col-sm-12 col-md-6">
+					<DivAboutMe data-aos="fade-up" data-aos-once="true" data-aos-duration="1200" className="col-xs-12 col-sm-12 col-md-6">
 						<H2 className="myName">Acerca de mi</H2>
 						<P1 className="P1">
 					   	¡Hola! Mi nombre es Gabriel Torres Ruiz, soy estudiante de la carrera Ingeniería de Computación
@@ -48,7 +48,7 @@ export class About extends Component {
 						    	<Link style={{width: '100%', textDecoration: 'none', color: '#023C68', WebkitTransition: 'all .3s linear', MozTransition: 'all .3s linear', MsTransition: 'all .3s linear', OTransition:  'all .3s linear', transition: 'all .3s linear'}} activeClass="active" to="test4" spy={true} smooth={true} offset={0} duration={2100} delay={200}>Contacto</Link>
 						    </Button>
 					  	</Div>
-					</div>
+					</DivAboutMe>
 				</DivRow>
 			</div>
 		);

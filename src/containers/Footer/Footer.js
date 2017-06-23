@@ -14,10 +14,13 @@ export class Footer extends Component {
 					<BarDiv className="bar">
 						<BarWrap className="bar-wrap">
 							<LinksDiv className="links"> {/* footer menu */}
-								<li><Link style={{textDecoration: 'none', cursor: 'pointer', WebkitTransition: 'all .3s linear', MozTransition: 'all .3s linear', MsTransition: 'all .3s linear', OTransition:  'all .3s linear', transition: 'all .3s linear'}} activeClass="active" to="test0" spy={true} smooth={true} offset={0} duration={1300} delay={200}>Inicio</Link></li>
+								<li><Link style={{textDecoration: 'none', cursor: 'pointer', WebkitTransition: 'all .3s linear', MozTransition: 'all .3s linear', MsTransition: 'all .3s linear', OTransition:  'all .3s linear', transition: 'all .3s linear'}} activeClass="active" to="test0" spy={true} smooth={true} offset={-10} duration={1300} delay={200}>Inicio</Link></li>
 								<li><Link style={{textDecoration: 'none', cursor: 'pointer', WebkitTransition: 'all .3s linear', MozTransition: 'all .3s linear', MsTransition: 'all .3s linear', OTransition:  'all .3s linear', transition: 'all .3s linear'}} activeClass="active" to="test1" spy={true} smooth={true} offset={-20} duration={1300} delay={200}>Acerca de mi</Link></li>
 								<li><Link style={{textDecoration: 'none', cursor: 'pointer', WebkitTransition: 'all .3s linear', MozTransition: 'all .3s linear', MsTransition: 'all .3s linear', OTransition:  'all .3s linear', transition: 'all .3s linear'}} activeClass="active" to="test2" spy={true} smooth={true} offset={0} duration={1300} delay={200}>Habilidades</Link></li>
-								<li><Link style={{textDecoration: 'none', cursor: 'pointer', WebkitTransition: 'all .3s linear', MozTransition: 'all .3s linear', MsTransition: 'all .3s linear', OTransition:  'all .3s linear', transition: 'all .3s linear'}} activeClass="active" to="test3" spy={true} smooth={true} offset={0} duration={1300} delay={200}>Portfolio</Link></li>
+								<li>
+									<Link className="hidden-xs" style={{textDecoration: 'none', cursor: 'pointer', WebkitTransition: 'all .3s linear', MozTransition: 'all .3s linear', MsTransition: 'all .3s linear', OTransition:  'all .3s linear', transition: 'all .3s linear'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={1000} delay={200}>Portafolio</Link>
+									<Link className="visible-xs" style={{textDecoration: 'none', cursor: 'pointer', WebkitTransition: 'all .3s linear', MozTransition: 'all .3s linear', MsTransition: 'all .3s linear', OTransition:  'all .3s linear', transition: 'all .3s linear'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-49} duration={1000} delay={200}>Portafolio</Link>
+								</li>
 								<li><Link style={{textDecoration: 'none', cursor: 'pointer', WebkitTransition: 'all .3s linear', MozTransition: 'all .3s linear', MsTransition: 'all .3s linear', OTransition:  'all .3s linear', transition: 'all .3s linear'}} activeClass="active" to="test4" spy={true} smooth={true} offset={0} duration={1300} delay={200}>Contacto</Link></li>
 							</LinksDiv>
 							<Social className="social">

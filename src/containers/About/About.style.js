@@ -6,10 +6,23 @@ export const DivRow = styled.div`
 
   @media screen and (max-width: 768px) {
     &{
-      margin-top: 50px;
+      margin-top: 30px;
       margin-bottom: 50px;
     }
   }
+`;
+
+export const DivAboutMe = styled.div`
+  padding-right: 80px!important;
+  padding-left: 80px!important;
+
+  @media screen and (max-width: 767px) {
+    &{
+      padding-right: 45px!important;
+      padding-left: 45px!important;
+    }
+  }
+
 `;
 
 
@@ -26,7 +39,7 @@ export const H2 = styled.h2`
       font-size: 2em;
       text-align: center;
       margin-top: 60px;
-      padding-left: 80px;
+      //padding-left: 80px;
     }
   }
 
@@ -76,7 +89,7 @@ export const P1 = styled.p`
   
   @media screen and (max-width: 991px) {
     &{
-        padding-left: 80px!important;
+        //padding-left: 80px!important;
       }
   }
 `;
@@ -89,7 +102,7 @@ export const P2 = styled.p`
 
   @media screen and (max-width: 991px) {
     &{
-        padding-left: 80px!important;
+        //padding-left: 80px!important;
       }
   }
 `;
@@ -105,7 +118,7 @@ export const Button = styled.div`
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-weight: 650;
+    font-weight: 600;
     font-size: 1.1em;
     padding: 12px 0px;
     cursor: pointer;
@@ -173,7 +186,6 @@ export const Div = styled.div`
   @media screen and (max-width: 992px) {
     &{
         width: 40%;
-        margin-left: 10%;
       }
   }
 

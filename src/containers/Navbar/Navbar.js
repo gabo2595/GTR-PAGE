@@ -14,11 +14,11 @@ export const Navbar = (props) => {
 		              	<span className="icon-bar middle-bar"></span>
 		              	<span className="icon-bar bottom-bar"></span>
 		           	</DivButton>
-		       		<Link style={{textDecoration: 'none', color: '#CECECE', cursor: 'pointer'}} activeClass="active" to="test0" spy={true} smooth={true} offset={-10} duration={1400} delay={200}>
-			       		<DivImg id="divimg">
-			       			<Img alt="self" src={require('assets/logo8-self-xxs.png')}/>
-						</DivImg>
-		       		</Link>
+		       		<DivImg id="divimg">
+		       			<Link style={{textDecoration: 'none', color: '#CECECE', cursor: 'pointer'}} activeClass="active" to="test0" spy={true} smooth={true} offset={-10} duration={1400} delay={200}>
+		       				<Img alt="self" src={require('assets/logo8-self-xxs.png')}/>
+		       			</Link>
+					</DivImg>
 			    </DivHeader>
 
 			    <Div1 className="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -37,7 +37,7 @@ export const Navbar = (props) => {
 						</Li>
 						<Li>
 							<Link className="hidden-xs" style={{textDecoration: 'none', padding: '8px 15px 8px 15px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-65} duration={1000} delay={200}>PORTAFOLIO</Link>
-							<Link className="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" style={{textAlign: 'center', textDecoration: 'none', padding: '12px 15px 12px 15px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={0} duration={1000} delay={200}>PORTAFOLIO</Link>
+							<Link className="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" style={{textAlign: 'center', textDecoration: 'none', padding: '12px 15px 12px 15px', color: '#EEEEEE'}} activeClass="active" to="test3" spy={true} smooth={true} offset={-49} duration={1000} delay={200}>PORTAFOLIO</Link>
 						</Li>
 						<Li>
 							<Link className="hidden-xs" style={{textDecoration: 'none', padding: '8px 15px 8px 15px', color: '#EEEEEE'}} activeClass="active" to="test4" spy={true} smooth={true} offset={0} duration={2100} delay={200}>CONTACTO</Link>
