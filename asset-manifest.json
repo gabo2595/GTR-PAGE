@@ -1,8 +1,8 @@
 {
   "main.css": "static/css/main.3e5c8433.css",
   "main.css.map": "static/css/main.3e5c8433.css.map",
-  "main.js": "static/js/main.4a844397.js",
-  "main.js.map": "static/js/main.4a844397.js.map",
+  "main.js": "static/js/main.0989a625.js",
+  "main.js.map": "static/js/main.0989a625.js.map",
   "static\\media\\Node-JS-xs.jpg": "static/media/Node-JS-xs.3978075f.jpg",
   "static\\media\\SIGPIE.jpeg": "static/media/SIGPIE.27cef376.jpeg",
   "static\\media\\WP-2.jpg": "static/media/WP-2.48352d38.jpg",
@@ -16,6 +16,7 @@
   "static\\media\\glyphicons-halflings-regular.ttf": "static/media/glyphicons-halflings-regular.e18bbf61.ttf",
   "static\\media\\glyphicons-halflings-regular.woff": "static/media/glyphicons-halflings-regular.fa277232.woff",
   "static\\media\\glyphicons-halflings-regular.woff2": "static/media/glyphicons-halflings-regular.448c34a5.woff2",
+  "static\\media\\logo8-self-xs.png": "static/media/logo8-self-xs.3af15134.png",
   "static\\media\\mongodb-logo-xs.png": "static/media/mongodb-logo-xs.57e44622.png",
   "static\\media\\react-logo-xs.png": "static/media/react-logo-xs.e8332018.png",
   "static\\media\\self-th2.jpg": "static/media/self-th2.6aaf3ebd.jpg",

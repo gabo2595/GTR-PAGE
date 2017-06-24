@@ -38,15 +38,19 @@ function getFormData() {
     }
   });
   //console.log(data);
+  document.getElementById('submit-button').style.pointerEvents = 'none';
+  document.getElementById('submit-button').style.backgroundColor = '#cccccc';
+  document.getElementById('submit-button').style.border = '1px solid #999999';
+  document.getElementById('submit-button').style.color = '#666666';
   return data;
 }
 
 function handleFormSubmit(event) {  // handles form submit withtout any jquery
   event.preventDefault();           // we are submitting via xhr below
   var data = getFormData();         // get the values submitted in the form
-  if( !validEmail(data.email) ) {   // if email is not valid show error
+  if( !validEmail(data.Email) ) {   // if email is not valid show error
     document.getElementById('email-invalid').style.display = 'block';
-    //console.log("llegue aqui");
+    console.log("llegue aqui");
     return false;
   } else {
     var url = event.target.action;  //
@@ -55,8 +59,21 @@ function handleFormSubmit(event) {  // handles form submit withtout any jquery
     // xhr.withCredentials = true;
     xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
     xhr.onreadystatechange = function() {
-        document.getElementById('gform').style.display = 'none'; // hide form
-        document.getElementById('thankyou_message').style.display = 'block';
+        document.getElementById('gform').reset();
+        document.getElementById('popup1').style.visibility = 'visible';
+        document.getElementById('popup1').style.opacity = '1';
+        document.getElementById('popup1').style.zIndex = '99999999';
+        $("#close-btn").click(function(){
+          document.getElementById('popup1').style.visibility = 'hidden';
+          document.getElementById('popup1').style.opacity = '0';
+          document.getElementById('popup1').style.zIndex = '-1';
+        });
+        document.getElementById('submit-button').style.pointerEvents = 'auto';
+        document.getElementById('submit-button').style.backgroundColor = '#0961A5';
+        document.getElementById('submit-button').style.border = 'none';
+        document.getElementById('submit-button').style.color = 'white';
+        //document.getElementById('gform').style.display = 'none'; // hide form
+        //document.getElementById('thankyou_message').style.display = 'block';
         return;
     };
     // url encode form data for sending as post data
