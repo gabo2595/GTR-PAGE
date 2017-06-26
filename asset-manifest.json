@@ -1,12 +1,13 @@
 {
   "main.css": "static/css/main.3e5c8433.css",
   "main.css.map": "static/css/main.3e5c8433.css.map",
-  "main.js": "static/js/main.8ac6f2f1.js",
-  "main.js.map": "static/js/main.8ac6f2f1.js.map",
-  "static\\media\\Bombillito.png": "static/media/Bombillito.0a94a552.png",
+  "main.js": "static/js/main.6754a475.js",
+  "main.js.map": "static/js/main.6754a475.js.map",
   "static\\media\\LogoPrueba.png": "static/media/LogoPrueba.d641316a.png",
   "static\\media\\Node-JS-xs.jpg": "static/media/Node-JS-xs.3978075f.jpg",
   "static\\media\\SIGPIE.jpeg": "static/media/SIGPIE.27cef376.jpeg",
+  "static\\media\\Self-2-s.jpg": "static/media/Self-2-s.f94501be.jpg",
+  "static\\media\\Self-2.jpg": "static/media/Self-2.7cf7a3cd.jpg",
   "static\\media\\WP-2.jpg": "static/media/WP-2.48352d38.jpg",
   "static\\media\\bkg4-s.jpg": "static/media/bkg4-s.9849c1fc.jpg",
   "static\\media\\bkg7-xs.jpg": "static/media/bkg7-xs.b2fe831b.jpg",
@@ -20,9 +21,7 @@
   "static\\media\\light-bulb.png": "static/media/light-bulb.73f9ea7f.png",
   "static\\media\\mongodb-logo-xs.png": "static/media/mongodb-logo-xs.57e44622.png",
   "static\\media\\react-logo-xs.png": "static/media/react-logo-xs.e8332018.png",
-  "static\\media\\self-th2.jpg": "static/media/self-th2.6aaf3ebd.jpg",
-  "static\\media\\self.jpg": "static/media/self.5ee69f87.jpg",
-  "static\\media\\twitter1-s.jpg": "static/media/twitter1-s.e843bc25.jpg",
+  "static\\media\\twitter1-s.jpg": "static/media/twitter1-s.5373b6a7.jpg",
   "static\\media\\usb-shad2.jpeg": "static/media/usb-shad2.7b2538bb.jpeg",
   "static\\media\\usb-xs.jpg": "static/media/usb-xs.925d1e23.jpg"
 }
