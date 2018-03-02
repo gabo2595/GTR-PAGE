@@ -49,7 +49,7 @@ export class Skills extends Component {
 							  <div id="card" className={this.state.classF1}>
 							    <figure style={{overflow: 'hidden'}} className="front">
 							    	<div style={{paddingTop: '5px', margin: '0 auto', backgroundColor: '#003067', borderRadius: '1000px', width: '120px', height: '120px'}}>
-							    		<img alt="img" style={{width: '95px', height: '95px'}} src={require('assets/react-logo-xs.png')}/>
+							    		<img alt="img" style={{width: '95px', height: '95px'}} src={require('assets/prueba/react-logo-xs.e8332018.png')}/>
 							    	</div>
 							    	<h2>Front-End</h2>
 							    	<p>Interfaz de usuario adaptable, totalmente responsivo para 
@@ -76,12 +76,12 @@ export class Skills extends Component {
 						</div>
 					</Div1>
 					<Div1 data-aos="fade-up" data-aos-once="true" className="col-sm-6 col-md-3 hidden-xs">
-						<div style={{width: '75%', margin: '0 auto'}}>
+						<div style={{width: '100%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card" className={this.state.classF1}>
 							    <figure style={{overflow: 'auto'}} className="front">
 							    	<div style={{paddingTop: '5px', margin: '0 auto', backgroundColor: '#003067', borderRadius: '1000px', width: '120px', height: '120px'}}>
-							    		<img alt="img" style={{width: '95px', height: '95px'}} src={require('assets/react-logo-xs.png')}/>
+							    		<img alt="img" style={{width: '95px', height: '95px'}} src={require('assets/prueba/react-logo-xs.e8332018.png')}/>
 							    	</div>
 							    	<h2>Front-End</h2>
 							    	<p>Interfaz de usuario adaptable, totalmente responsivo
@@ -130,16 +130,18 @@ export class Skills extends Component {
 							    	<div className="row">
 							    		<div style={{paddingLeft: '15px', paddingRight: '0px'}} className="col-xs-6 col-sm-6 col-md-6">
 									    	<Ul>
+									    		<li>PHP</li>
+									    		<li>NodeJS</li>
 									    		<li>Python</li>
 									    		<li>Java</li>
-									    		<li>NodeJS</li>
 									    	</Ul>
 									    </div>
 									    <div style={{paddingLeft: '0px', paddingRight: '0px'}} className="col-xs-6 col-sm-6 col-md-6">
 									    	<Ul>
+									    		<li style={{paddingLeft: '10px'}}>Laravel</li>
 									    		<li style={{paddingLeft: '10px'}}>Express</li>
-									    		<li style={{paddingLeft: '10px'}}>Web2py</li>
 									    		<li style={{paddingLeft: '10px'}}>Django</li>
+									    		<li style={{paddingLeft: '10px'}}>Web2py</li>
 									    	</Ul>
 									    </div>
 									</div>
@@ -152,7 +154,7 @@ export class Skills extends Component {
 						</div>
 					</Div2>
 					<Div2 data-aos="fade-up" data-aos-delay="200" data-aos-once="true" className="col-sm-6 col-md-3 hidden-xs">
-						<div style={{width: '75%', margin: '0 auto'}}>
+						<div style={{width: '100%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card1" className={this.state.classF2}>
 							    <figure style={{overflow: 'auto'}} className="front">
@@ -174,6 +176,7 @@ export class Skills extends Component {
 							    	<div className="row">
 							    		<div style={{paddingLeft: '0px', paddingRight: '0px'}} className="col-xs-6 col-sm-6 col-md-6">
 									    	<Ul>
+									    		<li>PHP</li>
 									    		<li>Python</li>
 									    		<li>Java</li>
 									    		<li>NodeJS</li>
@@ -181,6 +184,7 @@ export class Skills extends Component {
 									    </div>
 									    <div style={{paddingLeft: '0px', paddingRight: '0px'}} className="col-xs-6 col-sm-6 col-md-6">
 									    	<Ul>
+									    		<li style={{paddingLeft: '1%'}}>Laravel</li>
 									    		<li style={{paddingLeft: '1%'}}>Express</li>
 									    		<li style={{paddingLeft: '1%'}}>Web2py</li>
 									    		<li style={{paddingLeft: '1%'}}>Django</li>
@@ -201,12 +205,12 @@ export class Skills extends Component {
 							  <div id="card2" className={this.state.classF3}>
 							    <figure style={{overflow: 'hidden'}} className="front">
 							    	<div style={{paddingTop: '14px', margin: '0 auto', backgroundColor: '#FCAC32', borderRadius: '1000px', width: '120px', height: '120px'}}>
-							    		<img alt="img" style={{width: '90px', height: '90px'}} src={require('assets/mongodb-logo-xs.png')}/>
+							    		<img alt="img" style={{width: '90px', height: '90px'}} src={require('assets/prueba/mongodb-logo-xs.57e44622.png')}/>
 							    	</div>
 							    	<h2>Base de Datos</h2>
 							    	<p>
 							    		Conocimientos básicos para diseñar y desarrollar una base de datos
-							    		que se adapte a su aplicación web, con el mayor rendimiento, eficiencia
+							    		que se adapte a su aplicación web, con la mayor eficiencia
 							    		y seguridad de los datos
 							    	</p>
 							    </figure>
@@ -215,8 +219,10 @@ export class Skills extends Component {
 							    		Conocimientos en lenguajes y manejadores de bases de datos:
 							    	</p>
 							    	<Ul>
+							    		
 							    		<li>SQL</li>
 							    		<li>NoSQL</li>
+							    		<li>MySQL</li>
 							    		<li>PostgreSQL</li>
 							    		<li>SQLite</li>
 							    		<li>MongoDB</li>
@@ -230,17 +236,17 @@ export class Skills extends Component {
 						</div>
 					</Div3>
 					<Div3 data-aos="fade-up" data-aos-delay="400" data-aos-once="true" className="col-sm-6 col-md-3 hidden-xs">
-						<div style={{width: '75%', margin: '0 auto'}}>
+						<div style={{width: '100%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card2" className={this.state.classF3}>
 							    <figure style={{overflow: 'auto'}} className="front">
 							    	<div style={{paddingTop: '14px', margin: '0 auto', backgroundColor: '#FCAC32', borderRadius: '1000px', width: '120px', height: '120px'}}>
-							    		<img alt="img" style={{width: '90px', height: '90px'}} src={require('assets/mongodb-logo-xs.png')}/>
+							    		<img alt="img" style={{width: '90px', height: '90px'}} src={require('assets/prueba/mongodb-logo-xs.57e44622.png')}/>
 							    	</div>
 							    	<h2>Base de Datos</h2>
 							    	<p>
 							    		Conocimientos básicos para diseñar y desarrollar una base de datos
-							    		que se adapte a su aplicación web, con el mayor rendimiento, eficiencia
+							    		que se adapte a su aplicación web, con la mayor eficiencia
 							    		y seguridad de los datos
 							    	</p>
 							    </figure>
@@ -251,6 +257,7 @@ export class Skills extends Component {
 							    	<Ul>
 							    		<li>SQL</li>
 							    		<li>NoSQL</li>
+							    		<li>MySQL</li>
 							    		<li>PostgreSQL</li>
 							    		<li>SQLite</li>
 							    		<li>MongoDB</li>
@@ -268,8 +275,8 @@ export class Skills extends Component {
 							<section className="cont">
 							  <div id="card3" className={this.state.classF4}>
 							    <figure style={{overflow: 'hidden'}} className="front">
-							    	<div style={{paddingTop: '18px', margin: '0 auto', backgroundColor: '#29251F', borderRadius: '1000px', width: '120px', height: '120px'}}>
-							    		<img alt="img" style={{width: '80px', height: '80px'}} src={require('assets/bombillo-logo-xs.png')}/>
+							    	<div style={{paddingTop: '18px', margin: '0 auto', backgroundColor: '#b3b3b3', borderRadius: '1000px', width: '120px', height: '120px'}}>
+							    		<img alt="img" style={{width: '80px', height: '80px'}} src={require('assets/prueba/light-bulb.73f9ea7f.png')}/>
 							    	</div>
 							    	<h2>Innovación</h2>
 							    	<p style={{paddingRight: '15px'}}>
@@ -283,7 +290,7 @@ export class Skills extends Component {
 							    	</p>
 							    	<Ul>
 							    		<li>Project Manager</li>
-							    		<li>Project Plannig</li>
+							    		<li>Project Planning</li>
 							    		<li>Scrum</li>
 							    	</Ul>
 							    </figure>
@@ -295,12 +302,12 @@ export class Skills extends Component {
 						</div>
 					</Div4>
 					<Div4 data-aos="fade-up" data-aos-delay="600" data-aos-once="true" className="col-sm-6 col-md-3 hidden-xs">
-						<div style={{width: '75%', margin: '0 auto'}}>
+						<div style={{width: '100%', margin: '0 auto'}}>
 							<section className="cont">
 							  <div id="card3" className={this.state.classF4}>
 							    <figure style={{overflow: 'auto'}} className="front">
-							    	<div style={{paddingTop: '18px', margin: '0 auto', backgroundColor: '#29251F', borderRadius: '1000px', width: '120px', height: '120px'}}>
-							    		<img alt="img" style={{width: '80px', height: '80px'}} src={require('assets/bombillo-logo-xs.png')}/>
+							    	<div style={{paddingTop: '18px', margin: '0 auto', backgroundColor: '#b3b3b3', borderRadius: '1000px', width: '120px', height: '120px'}}>
+							    		<img alt="img" style={{width: '80px', height: '80px', paddingTop: 5}} src={require('assets/prueba/light-bulb.73f9ea7f.png')}/>
 							    	</div>
 							    	<h2>Innovación</h2>
 							    	<p style={{paddingRight: '15px'}}>
@@ -314,7 +321,7 @@ export class Skills extends Component {
 							    	</p>
 							    	<Ul>
 							    		<li>Project Manager</li>
-							    		<li>Project Plannig</li>
+							    		<li>Project Planning</li>
 							    		<li>Scrum</li>
 							    	</Ul>
 							    </figure>

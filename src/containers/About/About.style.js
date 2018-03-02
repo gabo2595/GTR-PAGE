@@ -30,7 +30,7 @@ export const H2 = styled.h2`
   margin-top: 0px;
   letter-spacing: 3px;
   text-transform: uppercase;
-  color: #0961A5;
+  color: #003067;
   font-weight: 900;
   font-size: 2.5em;
 
@@ -46,7 +46,7 @@ export const H2 = styled.h2`
   @media screen and (min-width: 769px) and (max-width: 991px) {
     &{
       margin-top: 80px;
-      padding-left: 80px;
+      //padding-left: 80px;
     }
   }
 `;
@@ -55,8 +55,11 @@ export const ImageButton = styled.div`
   cursor: pointer;
   overflow: hidden;
   display: inline-block;
-  box-shadow: 40px 40px 1px #023C68;
+  box-shadow: 30px 30px 0px #003067;
   z-index: 99;
+  width: 75%;
+  //height: auto;
+  //border-radius: 20000px;
 
   & > img{
     -moz-transition: transform 1s;
@@ -74,9 +77,16 @@ export const ImageButton = styled.div`
   @media screen and (max-width: 768px) {
     &{
       margin-top: 40px;
-      height: 200px;
-      width: 200px;
-      box-shadow: 20px 20px 1px #023C68;
+      width: 45%;
+      box-shadow: 20px 20px 0px #003067;
+    }
+  }
+
+  @media screen and (max-width: 568px) {
+    &{
+      margin-top: 40px;
+      width: 75%;
+      box-shadow: 20px 20px 0px #003067;
     }
   }
 
@@ -132,7 +142,7 @@ export const Button = styled.div`
     left: 0;
     width: 100%;
     height: 2px;
-    background: #023C68;
+    background: #003067;
     content: '';
     -webkit-transition: top .4s;
     -moz-transition: top .4s;

@@ -2,13 +2,15 @@ import React, { Component } from 'react';
 import {DivArrow, SpanR} from './Home.style';
 
 import {Navbar} from '../Navbar/Navbar';
-import {Slide} from '../Slide/Slide';
 import {About} from '../About/About';
 import {Skills} from '../Skills/Skills';
 import {Breaker} from '../Breaker/Breaker';
 import {Portfolio} from '../Portfolio/Portfolio';
 import {ContactForm} from '../ContactForm/ContactForm';
 import {Footer} from '../Footer/Footer';
+import {PopUp} from '../PopUp/PopUp';
+import {ArrowUp} from '../ArrowUp/ArrowUp';
+import {Main} from '../Main/Main';
 
 
 import Waypoint from 'react-waypoint';
@@ -39,13 +41,15 @@ export class Home extends Component {
 		return (
 
 			<div>
-				<Waypoint onEnter={this.setClassN.bind(this, "none")}/>
 				<Navbar classN={this.state.classN}/>
+				<Waypoint onEnter={this.setClassN.bind(this, "none")}/>
+				<PopUp/>
 				<Element name="test0"></Element>
-				<Slide/>
+				<Main/>
+				<ArrowUp/>
 				<DivArrow className="arrow animated bounce">
-					<Link style={{textDecoration: 'none'}} activeClass="active" to="test1" spy={true} smooth={true} offset={-20} duration={1000} delay={200}>
-						<SpanR style={{fontSize: '35px', color: 'white'}} className="glyphicon glyphicon-chevron-down"></SpanR>
+					<Link style={{textDecoration: 'none'}} activeClass="active" to="test1" spy={true} smooth={true} offset={0} duration={1000} delay={200}>
+						<SpanR className="glyphicon glyphicon-menu-down"></SpanR>
 					</Link>
 				</DivArrow>
 				<br/>

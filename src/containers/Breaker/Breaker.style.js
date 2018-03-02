@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const DivContainer = styled.div`
 	#breakimg{
-		background-image: url(${require('assets/bkg4-s.jpg')});
+		background-image: url(${require('assets/prueba/bkg4-s.9849c1fc.jpg')});
 		background-attachment: fixed;
 		background-position: center;
 		background-repeat: no-repeat;

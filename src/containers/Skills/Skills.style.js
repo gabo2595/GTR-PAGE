@@ -2,11 +2,11 @@ import styled from 'styled-components';
 
 export const DivRow = styled.div`
 	background-color: #FBFCFC;
-	padding: 60px 0px 70px 0px;
+	padding: 60px 20px 70px 20px;
 
 	@media screen and (max-width: 768px) {
 		&{
-			padding: 50px 0px 20px 0px;
+			padding: 50px 20px 20px 20px;
 		}
 	}
 `;
@@ -18,7 +18,7 @@ export const Div0 = styled.div`
 		margin-top: 0px;
 		letter-spacing: 3px;
 		text-transform: uppercase;
-		color: #0961A5;
+		color: #003067;
 		font-weight: 900;
 		font-size: 2.5em;
 		padding-left: 50px;
@@ -39,10 +39,14 @@ export const Div0 = styled.div`
 
 export const Div1 = styled.div`
 	padding-bottom: 50px;
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+
+	@media screen and (max-width: 767px){
+		padding-right: 0px!important;
+	}
 	.cont {
-	  width: cover;
+	  width: 100%;
 	  height: 300px;
 	  position: relative;
 	  perspective: 800px;
@@ -70,7 +74,7 @@ export const Div1 = styled.div`
 	  text-align: center;
 
 	  h2{
-	  	color: #0961A5;
+	  	color: #003067;
 	  	margin-top: 15px;
 	  	font-weight: 600;
 	  	font-size: 1.5em;
@@ -100,7 +104,15 @@ export const Div1 = styled.div`
 
 	  @media screen and (max-width: 768px) {
 	  	&{
-	  		padding-top: 10px;
+	  		padding-top: 0px;
+	  	}
+	  }
+	  @media screen and (max-width: 320px) {
+	  	&{
+	  		p{
+	  			padding-bottom: 0px;
+	  			margin-bottom: 5px;
+	  		}
 	  	}
 	  }
 
@@ -132,8 +144,14 @@ export const Div1 = styled.div`
 
 export const Div2 = styled.div`
 	padding-bottom: 50px;
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+	@media screen and (max-width: 768px){
+		padding-right: 0px!important;
+	}
+	@media screen and (max-width: 767px){
+		padding-left: 0px!important;
+	}
 	.cont { 
 	  width: cover;
 	  height: 300px;
@@ -163,7 +181,7 @@ export const Div2 = styled.div`
 	  text-align: center;
 
 	  h2{
-	  	color: #0961A5;
+	  	color: #003067;
 	  	margin-top: 15px;
 	  	font-weight: 600;
 	  	font-size: 1.5em;
@@ -183,12 +201,13 @@ export const Div2 = styled.div`
 			font-size: 1em;
 		  	padding-left: 25px;
 		  	padding-right: 25px;
-		  	padding-top: 30px;
-		  	padding-bottom: 15px;
+		  	padding-top: 20px;
+		  	padding-bottom: 5px;
 	  	}
 
 	  	ul li{
 	  		padding-left: 40px;
+	  		padding-bottom: 20px;
 	  	}
 
 
@@ -197,7 +216,7 @@ export const Div2 = styled.div`
 		  		p{
 			  		padding-left: 19px;
 			  		padding-right: 19px;
-			  		padding-bottom: 15px;
+			  		padding-bottom: 5px;
 			  		padding-top: 30px;
 			  	}
 
@@ -222,24 +241,17 @@ export const Div2 = styled.div`
 	  		}
 	  	}
 
-	  	@media screen and (min-width: 1024px) and (max-width: 1024px) and (orientation: portrait) {
-	  		&{
-	  			ul li{
-			  		padding-left: 30px;
-			  	}
-	  		}
-	    }
 
 	    @media screen and (max-width: 1125px) and (orientation: landscape) {
 	    	&{
 	    		p{
 		  	  		padding-left: 20px;
 		  	  		padding-right: 20px;
-		  	  		padding-bottom: 15px;
+		  	  		padding-bottom: 5px;
 		  	  		padding-top: 30px;
 	  	  		}
 	  	  		ul li{
-	  	  			padding-left: 18px;
+	  	  			padding-left: 30px;
 	  	  		}
 	    	}
 	    }
@@ -261,7 +273,7 @@ export const Div2 = styled.div`
 		  	  		padding-top: 30px;
 	  	  		}
 	  	  		ul li{
-	  	  			padding-left: 20px;
+	  	  			padding-left: 30px;
 	  	  		}
 	    	}
 	    }
@@ -296,11 +308,32 @@ export const Div2 = styled.div`
 	  		}
 	  	}
 
+	  	@media screen and (max-width: 568px) and (orientation: landscape) {
+	  		&{
+		  		p{
+		  	  		padding-left: 30px;
+		  	  		padding-right: 30px;
+		  	  		padding-bottom: 15px;
+		  	  		padding-top: 30px;
+		  	  	}
+
+		  		ul li{
+		  			padding-left: 32px;
+		  			padding-bottom: 15px;
+		  		}
+	  		}
+	  	}
+
 	  	@media screen and (max-width: 414px) and (orientation: portrait) {
 	  		&{
+	  			p {
+	  				padding-top: 20px;
+	  				padding-bottom: 5px;
+	  			}
+
 		  		ul li{
-		  			padding-left: 24px;
-		  			padding-bottom: 20px;
+		  			padding-left: 16px;
+		  			padding-bottom: 15px;
 		  		}
 	  		}
 	  	}
@@ -318,8 +351,14 @@ export const Div2 = styled.div`
 
 export const Div3 = styled.div`
 	padding-bottom: 50px;
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+	@media screen and (max-width: 768px){
+		padding-left: 0px!important;
+	}
+	@media screen and (max-width: 767px){
+		padding-left: 0px!important;
+	}
 	.cont { 
 	  width: cover;
 	  height: 300px;
@@ -349,7 +388,7 @@ export const Div3 = styled.div`
 	  text-align: center;
 
 	  h2{
-	  	color: #0961A5;
+	  	color: #003067;
 	  	margin-top: 15px;
 	  	font-weight: 600;
 	  	font-size: 1.5em;
@@ -362,7 +401,7 @@ export const Div3 = styled.div`
 	#card2 .back {
 	  background:  #1C2833
 	  color: #EEEEEE;
-	  text-align: justify;
+	  text-align: left;
 	  transform: rotateY( 180deg );
 
 	  p{
@@ -416,8 +455,11 @@ export const Div3 = styled.div`
 
 export const Div4 = styled.div`
 	padding-bottom: 50px;
-	padding-left: 0;
-	padding-right: 0;
+	padding-left: 10px!important;
+	padding-right: 10px!important;
+	@media screen and (max-width: 767px){
+		padding-left: 0px!important;
+	}
 	.cont { 
 	  width: cover;
 	  height: 300px;
@@ -447,7 +489,7 @@ export const Div4 = styled.div`
 	  text-align: center;
 
 	  h2{
-	  	color: #0961A5;
+	  	color: #003067;
 	  	margin-top: 15px;
 	  	font-weight: 600;
 	  	font-size: 1.5em;
@@ -505,6 +547,7 @@ export const Div = styled.div`
 	position: absolute;
 	width: 50%;
 	margin-top: 10px;
+	color: #003067;
 `;
 
 export const Button = styled.div`
@@ -542,7 +585,7 @@ export const Button = styled.div`
 	  left: 0;
 	  width: 2px;
 	  height: 2px;
-	  background: #023C68;
+	  background: #003067;
 	  content: '';
 	  -webkit-transition: height .4s;
 	  -moz-transition: height .4s;

@@ -16,7 +16,7 @@ export const Navbar = (props) => {
 		           	</DivButton>
 		       		<DivImg id="divimg">
 		       			<Link style={{textDecoration: 'none', color: '#CECECE', cursor: 'pointer'}} activeClass="active" to="test0" spy={true} smooth={true} offset={-10} duration={1400} delay={200}>
-		       				<Img alt="self" src={require('assets/logo8-self-xxs.png')}/>
+		       				<Img alt="self" src={require('assets/prueba/LogoPrueba.d641316a.png')}/>
 		       			</Link>
 					</DivImg>
 			    </DivHeader>
@@ -28,7 +28,7 @@ export const Navbar = (props) => {
 			    			<Link className="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" style={{textAlign: 'center', textDecoration: 'none', padding: '12px 15px 12px 15px', color: '#EEEEEE'}} to="test0" spy={true} smooth={true} offset={-10} duration={1400} delay={200}>INICIO</Link>
 			    		</Li>
 						<Li>
-							<Link className="hidden-xs" style={{textDecoration: 'none', padding: '8px 15px 8px 15px', color: '#EEEEEE'}} activeClass="active" to="test1" spy={true} smooth={true} offset={-20} duration={1000} delay={200}>ACERCA DE MI</Link>
+							<Link className="hidden-xs" style={{textDecoration: 'none', padding: '8px 15px 8px 15px', color: '#EEEEEE'}} activeClass="active" to="test1" spy={true} smooth={true} offset={0} duration={1000} delay={200}>ACERCA DE MI</Link>
 							<Link className="visible-xs" data-toggle="collapse" data-target=".navbar-collapse" style={{textAlign: 'center', textDecoration: 'none', padding: '12px 15px 12px 15px', color: '#EEEEEE'}} activeClass="active" to="test1" spy={true} smooth={true} offset={0} duration={1000} delay={200}>ACERCA DE MI</Link>
 						</Li>
 						<Li>

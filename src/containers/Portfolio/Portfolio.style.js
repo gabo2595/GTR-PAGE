@@ -2,6 +2,7 @@ import styled from 'styled-components';
 
 export const DivContainer = styled.div`
 	height: auto;
+	background-color: white;
 `;
 
 export const DivImg = styled.div`
@@ -21,13 +22,13 @@ export const DivImg = styled.div`
 		margin-top: 110px;
 		margin-bottom: 10px;
 		font-weight: 800;
-		color: #0961A5;
+		color: #003067;
 		padding-right: 10px;
 	}
 
 	h3{
 		font-weight: 700;
-		color: #0961A5;
+		color: #003067;
 		font-size: 1.5em;
 	}
 
@@ -45,7 +46,7 @@ export const DivImg = styled.div`
 		li:before{
 			content: "• ";
 			font-size: 1.3em;
-		  	color: #0961A5;
+		  	color: #003067;
 		}
 	}
 
@@ -71,7 +72,7 @@ export const DivImg = styled.div`
 			-webkit-transition: all ease-in-out .2s;
 			-o-transition: all ease-in-out .2s;
 			transition: all ease-in-out .2s;
-			color: #0961A5;
+			color: #003067;
 		}
 	}
 
@@ -94,7 +95,6 @@ export const DivImg = styled.div`
 			padding-top: 0px;
 
 			h2{
-				//margin-top: 0px;
 				font-size: 1.7em;
 				text-align: center;
 				padding-right: 0px;
@@ -112,6 +112,7 @@ export const DivImg = styled.div`
 
 			#divPic{
 				margin-top: 20px;
+				padding-bottom: 50px;
 			}
 		}
 	}
@@ -127,7 +128,7 @@ export const DivImg = styled.div`
 export const Img = styled.img`
 	margin-top: 50px;
 	margin-bottom: 20px;
-	box-shadow: 10px 10px 10px 1px black;
+	box-shadow: 35px 35px 0px #003067;
 
 	@media screen and (max-width: 991px){
 		&{
@@ -171,7 +172,9 @@ export const DivLinks = styled.div`
 `;
 
 export const DivLinks1 = styled.div`
-
+	h3{
+		margin-top: 50px;
+	}
 	@media screen and (min-width: 992px){
 		&{
 			ul > li{
@@ -205,7 +208,7 @@ export const DivLinks1 = styled.div`
 `;
 
 export const DivP1 = styled.div`
-	background-image: url(${require('assets/WP-2.jpg')});
+	background-image: url(${require('assets/gtrpage.jpg')});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -226,9 +229,9 @@ export const DivP1 = styled.div`
     	-o-transition: opacity ease-in-out .3s;
     	transition: opacity ease-in-out .3s;
     	opacity: 0;
-    	color: #0961A5;
+    	color: white;
     	font-size: 2em;
-    	font-weight: 700;
+    	font-weight: 600;
     	padding-top: 110px;
 
     }
@@ -274,7 +277,7 @@ export const DivP1 = styled.div`
 		-webkit-transition: all ease-in-out .3s;
 		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
-		color: #EEEEEE;
+		color: #0080E4;
 	}
 
 	&:hover > #hoverbar{
@@ -291,14 +294,14 @@ export const DivP1 = styled.div`
 		-webkit-transition: all ease-in-out .3s;
 		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
-		color: #0961A5;
+		color: white;
 		font-size: 1.6em;
 		opacity: 0;
 	}
 `;
 
 export const DivP2 = styled.div`
-	background-image: url(${require('assets/SIGPIE.jpeg')});
+	background-image: url(${require('assets/prueba/SIGPIE.27cef376.jpg')});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -318,9 +321,9 @@ export const DivP2 = styled.div`
     	-o-transition: opacity ease-in-out .3s;
     	transition: opacity ease-in-out .3s;
     	opacity: 0;
-    	color: #0961A5;
+    	color: white;
     	font-size: 2em;
-    	font-weight: 700;
+    	font-weight: 600;
     	padding-top: 110px;
     }
 
@@ -365,7 +368,7 @@ export const DivP2 = styled.div`
 		-webkit-transition: all ease-in-out .3s;
 		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
-		color: #EEEEEE;
+		color: #0080E4;
 	}
 
 	&:hover > #hoverbar{
@@ -382,7 +385,7 @@ export const DivP2 = styled.div`
 		-webkit-transition: all ease-in-out .3s;
 		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
-		color: #0961A5;
+		color: white;
 		font-size: 1.6em;
 		opacity: 0;
 	}
@@ -390,7 +393,7 @@ export const DivP2 = styled.div`
 `;
 
 export const DivP3 = styled.div`
-	background-image: url(${require('assets/usb-xs.jpg')});
+	background-image: url(${require('assets/prueba/usb-xs.925d1e23.jpg')});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -410,9 +413,9 @@ export const DivP3 = styled.div`
     	-o-transition: opacity ease-in-out .3s;
     	transition: opacity ease-in-out .3s;
     	opacity: 0;
-    	color: #0961A5;
+    	color: white;
     	font-size: 2em;
-    	font-weight: 700;
+    	font-weight: 600;
     	padding-top: 110px;
     }
 
@@ -457,7 +460,7 @@ export const DivP3 = styled.div`
 		-webkit-transition: all ease-in-out .3s;
 		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
-		color: #EEEEEE;
+		color: #0080E4;
 	}
 
 	&:hover > #hoverbar{
@@ -474,14 +477,14 @@ export const DivP3 = styled.div`
 		-webkit-transition: all ease-in-out .3s;
 		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
-		color: #0961A5;
+		color: white;
 		font-size: 1.6em;
 		opacity: 0;
 	}
 `;
 
 export const DivP4 = styled.div`
-	background-image: url(${require('assets/twitter1-s.jpg')});
+	background-image: url(${require('assets/prueba/twitter1-s.5373b6a7.jpg')});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -498,9 +501,9 @@ export const DivP4 = styled.div`
     p{
     	transition: opacity ease-in-out .3s;
     	opacity: 0;
-    	color: #0961A5;
+    	color: white;
     	font-size: 2em;
-    	font-weight: 700;
+    	font-weight: 600;
     	padding-top: 110px;
     }
 
@@ -545,7 +548,7 @@ export const DivP4 = styled.div`
 		-webkit-transition: all ease-in-out .3s;
 		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
-		color: #EEEEEE;
+		color: #0080E4;
 	}
 
 	&:hover > #hoverbar{
@@ -562,7 +565,7 @@ export const DivP4 = styled.div`
 		-webkit-transition: all ease-in-out .3s;
 		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
-		color: #0961A5;
+		color: white;
 		font-size: 1.6em;
 		opacity: 0;
 	}
@@ -570,7 +573,7 @@ export const DivP4 = styled.div`
 `;
 
 export const DivP5 = styled.div`
-	background-image: url(${require('assets/Node-JS-xs.jpg')});
+	background-image: url(${require('assets/prueba/Node-JS-xs.3978075f.jpg')});
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: cover;
@@ -590,9 +593,9 @@ export const DivP5 = styled.div`
     	-o-transition: opacity ease-in-out .3s;
     	transition: opacity ease-in-out .3s;
     	opacity: 0;
-    	color: #0961A5;
+    	color: white;
     	font-size: 2em;
-    	font-weight: 700;
+    	font-weight: 600;
     	padding-top: 110px;
     }
 
@@ -637,7 +640,7 @@ export const DivP5 = styled.div`
 		-webkit-transition: all ease-in-out .3s;
 		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
-		color: #EEEEEE;
+		color: #0080E4;
 	}
 
 	&:hover > #hoverbar{
@@ -654,7 +657,193 @@ export const DivP5 = styled.div`
 		-webkit-transition: all ease-in-out .3s;
 		-o-transition: all ease-in-out .3s;
 		transition: all ease-in-out .3s;
-		color: #0961A5;
+		color: white;
+		font-size: 1.6em;
+		opacity: 0;
+	}
+`;
+
+export const DivP6 = styled.div`
+	background-image: url(${require('assets/prueba/agrochannel2.62e1ea68.jpg')});
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+
+	-moz-transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    text-align: center;
+
+    p{
+    	-moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
+    	transition: opacity ease-in-out .3s;
+    	opacity: 0;
+    	color: white;
+    	font-size: 2em;
+    	font-weight: 600;
+    	padding-top: 110px;
+
+    }
+
+    #hoverbar{
+    	height:100%;
+	    width:100%;
+	    background-color: black;
+	    position:absolute;
+	    bottom:0;
+	    margin:0;
+	    padding:0;
+	    opacity: 0;
+	    -moz-transition: opacity ease-in-out .3s;
+	    -webkit-transition: opacity ease-in-out .3s;
+	    -o-transition: opacity ease-in-out .3s;
+	    transition: opacity ease-in-out .3s;
+	    z-index: -1;
+    }
+
+
+	&:hover{
+		.glyphicon-search{
+			opacity: 1;
+			cursor: pointer;
+			-moz-transition: all ease-in-out .3s;
+			-webkit-transition: all ease-in-out .3s;
+			-o-transition: all ease-in-out .3s;
+			transition: all ease-in-out .3s;
+		}
+
+		p{
+			-moz-transition: opacity ease-in-out .3s;
+			-webkit-transition: opacity ease-in-out .3s;
+			-o-transition: opacity ease-in-out .3s;
+			transition: opacity ease-in-out .3s;
+			opacity: 1;
+		}
+	}
+
+	.glyphicon-search:hover{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
+		transition: all ease-in-out .3s;
+		color: #0080E4;
+	}
+
+	&:hover > #hoverbar{
+		opacity: .9;
+		-moz-transition: opacity ease-in-out .3s;
+		-webkit-transition: opacity ease-in-out .3s;
+		-o-transition: opacity ease-in-out .3s;
+		transition: opacity ease-in-out .3s;
+
+	}
+
+	.glyphicon-search{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
+		transition: all ease-in-out .3s;
+		color: white;
+		font-size: 1.6em;
+		opacity: 0;
+	}
+`;
+
+export const DivP7 = styled.div`
+	background-image: url(${require('assets/prueba/everleds.jpg')});
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+
+	-moz-transition: all .5s ease-out;
+	-webkit-transition: all .5s ease-out;
+	-o-transition: all .5s ease-out;
+	transition: all .5s ease-out;
+
+    padding-left: 0px!important;
+    padding-right: 0px!important;
+    text-align: center;
+
+    p{
+    	-moz-transition: opacity ease-in-out .3s;
+    	-webkit-transition: opacity ease-in-out .3s;
+    	-o-transition: opacity ease-in-out .3s;
+    	transition: opacity ease-in-out .3s;
+    	opacity: 0;
+    	color: white;
+    	font-size: 2em;
+    	font-weight: 600;
+    	padding-top: 110px;
+
+    }
+
+    #hoverbar{
+    	height:100%;
+	    width:100%;
+	    background-color: black;
+	    position:absolute;
+	    bottom:0;
+	    margin:0;
+	    padding:0;
+	    opacity: 0;
+	    -moz-transition: opacity ease-in-out .3s;
+	    -webkit-transition: opacity ease-in-out .3s;
+	    -o-transition: opacity ease-in-out .3s;
+	    transition: opacity ease-in-out .3s;
+	    z-index: -1;
+    }
+
+
+	&:hover{
+		.glyphicon-search{
+			opacity: 1;
+			cursor: pointer;
+			-moz-transition: all ease-in-out .3s;
+			-webkit-transition: all ease-in-out .3s;
+			-o-transition: all ease-in-out .3s;
+			transition: all ease-in-out .3s;
+		}
+
+		p{
+			-moz-transition: opacity ease-in-out .3s;
+			-webkit-transition: opacity ease-in-out .3s;
+			-o-transition: opacity ease-in-out .3s;
+			transition: opacity ease-in-out .3s;
+			opacity: 1;
+		}
+	}
+
+	.glyphicon-search:hover{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
+		transition: all ease-in-out .3s;
+		color: #0080E4;
+	}
+
+	&:hover > #hoverbar{
+		opacity: .9;
+		-moz-transition: opacity ease-in-out .3s;
+		-webkit-transition: opacity ease-in-out .3s;
+		-o-transition: opacity ease-in-out .3s;
+		transition: opacity ease-in-out .3s;
+
+	}
+
+	.glyphicon-search{
+		-moz-transition: all ease-in-out .3s;
+		-webkit-transition: all ease-in-out .3s;
+		-o-transition: all ease-in-out .3s;
+		transition: all ease-in-out .3s;
+		color: white;
 		font-size: 1.6em;
 		opacity: 0;
 	}

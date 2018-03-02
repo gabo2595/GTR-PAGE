@@ -3,18 +3,27 @@ import styled from 'styled-components';
 export const Div1 = styled.div`
 	background-color: #131313;
 	color: #EEEEEE;
+	height: 560px;
+	padding-top: 70px;
+
+	@media screen and (max-width: 992px) {
+		&{
+			padding-top: 60px;
+		}
+	}
+
 	h1{
 		text-transform: uppercase;
-		margin-top: 20px;
 		margin-left: 10%;
 		font-size: 2.5em;
 		font-weight: 900;
-		color: #0961A5;
+		color: #003067;
 
-		@media screen and (max-width: 991px) {
+		@media screen and (max-width: 992px) {
 			&{
 				text-align: center
 				margin-left: 0;
+				margin-top: 0;
 			}
 		}
 
@@ -26,12 +35,21 @@ export const Div1 = styled.div`
 		}
 	}
 	h3{
-		margin-top: 10%;
+		margin-top: 5%;
 		margin-bottom: 5%;
 		margin-left: 10%;
 		font-weight: 400;
 		font-size: 1.7em;
 
+		@media screen and (max-width: 992px) {
+			&{
+				font-size: 1.9em;
+				margin-top: 5%;
+				margin-bottom: 2%;
+				text-align: center;
+				margin-left: 0;
+			}
+		}
 
 		@media screen and (max-width: 767px) {
 			&{
@@ -40,11 +58,6 @@ export const Div1 = styled.div`
 			}
 		}
 
-		@media screen and (max-width: 992px) {
-			&{
-				font-size: 1.9em;
-			}
-		}
 		@media screen and (max-width: 400px) {
 			&{
 				font-size: 1.5em;
@@ -53,7 +66,7 @@ export const Div1 = styled.div`
 	}
 	p{
 		font-size: 1em;
-		margin-bottom: 10%;
+		margin-bottom: 5%;
 		padding-left: 10%;
 		padding-right: 10%;
 		text-align: justify;
@@ -72,26 +85,8 @@ export const Div1 = styled.div`
 	}
 `;
 
-export const Span1 = styled.span`
-  font-size: 1.8em;
-  margin-left: 11%;
-
-  h4{
-  	padding-bottom: 3%;
-    display: inline-block;
-    font-size: .6em;
-    padding-left: 1%;
-  }
-
-  @media screen and (max-width: 400px) {
-  	&{
-  		font-size: 2em;
-  	}
-  }
-`;
-
 export const Div2 = styled.div`
-	background-image: url(${require('assets/bkg7-xs.jpg')});
+	background-image: url(${require('assets/prueba/bkg7-xs.b2fe831b.jpg')});
 	background-attachment: fixed;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -107,9 +102,10 @@ export const Div2 = styled.div`
         }
 	}
 
-	@media screen and (max-width: 991px) {
+	@media screen and (max-width: 992px) {
 		padding-left: 180px;
 		padding-right: 180px;
+		padding-top: 100px;
 	}
 	@media screen and (max-width: 767px) {
 		padding-left: 50px;
@@ -140,9 +136,13 @@ export const Form = styled.form`
 
 
 	input, textarea{
-		border: 1px solid #aaa;
+		border: none;
     	box-shadow: 0px 0px 3px #ccc, 0 10px 15px #eee inset;
-    	border-radius: 2px;
+    	border-radius: 3px;
+    	-webkit-border-radius: 3px;
+    	-moz-border-radius: 3px;
+    	-ms-border-radius: 3px;
+    	-o-border-radius: 3px;
     	-moz-transition: width .25s; 
 	    -webkit-transition: width .25s; 
 	    -o-transition: width .25s;
@@ -174,29 +174,22 @@ export const Form = styled.form`
 		width: 120px;
 		font-size: 15px;
 
-
-		background-color: #1d7ce2;
-	    border: 1px solid #092543;
-	    border-bottom: 1px solid #092543;
-	    border-radius: 5px;
-	    -webkit-border-radius: 5px;
-	    -moz-border-radius: 5px;
-	    -ms-border-radius: 5px;
-	    -o-border-radius: 5px;
-	    box-shadow: inset 0 1px 0 0 #092543;
-	    -webkit-box-shadow: 0 1px 0 0 #092543 inset ;
-	    -moz-box-shadow: 0 1px 0 0 #092543 inset;
-	    -ms-box-shadow: 0 1px 0 0 #092543 inset;
-	    -o-box-shadow: 0 1px 0 0 #092543 inset;
+		transition: all ease-in-out .3s;
+		background-color: #003067;
+	    border: none;
+	    border-radius: 3px;
+	    -webkit-border-radius: 3px;
+	    -moz-border-radius: 3px;
+	    -ms-border-radius: 3px;
+	    -o-border-radius: 3px;
 	    color: white;
 	    font-weight: bold;
-	    //padding: 10px 20px;
 	    text-align: center;
-	    text-shadow: 0 -1px 0 #396715;
+	    //text-shadow: 0 -1px 0 #396715;
 	}
 
 	button:hover{
-		opacity: .85;
+		background-color: #001833;
 	}
 
 	input:focus:invalid, textarea:focus:invalid {
@@ -268,39 +261,14 @@ export const SpanHint = styled.span`
     left:-6px;
 `;
 
-export const DivThanks = styled.div`
-	display: none;
-	text-align: center;
-	background-color: #1d7ce2;
-	box-shadow: 10px 10px 10px black;
-	opacity: .9;
-	color: #EEEEEE;
-	padding: 10px 10px;
-	border-radius: 5px;
+export const DivMap = styled.div`
+	padding-left: 10%;
+	width: 100%;
+	height: 200px;
+	padding-right: 10%;
+	//border: 5px solid black;
 
-	h2{
-		margin-top: 0;
-		font-weight: 900;
-	}
-	h3{
-		font-weight: 600;
-	}
-
-
-	@media screen and (min-width: 991px) {
-		&{
-			margin-top: 14%;
-		}
-	}
-
-	@media screen and (max-width: 412px) {
-		&{
-			h2{
-				font-size: 1.65em;
-			}
-			h3{
-				font-size: 1.4em;
-			}
-		}
+	@media screen and (max-width: 992px){
+		//padding-bottom: 5%;
 	}
 `;
